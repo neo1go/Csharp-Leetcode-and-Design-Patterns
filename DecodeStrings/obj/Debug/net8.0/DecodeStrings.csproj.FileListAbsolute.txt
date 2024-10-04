@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\DecodeStrings\bin\Debug\net8.0\DecodeStrings.exe
+C:\Users\Willkommen\source\repos\DecodeStrings\bin\Debug\net8.0\DecodeStrings.deps.json
+C:\Users\Willkommen\source\repos\DecodeStrings\bin\Debug\net8.0\DecodeStrings.runtimeconfig.json
+C:\Users\Willkommen\source\repos\DecodeStrings\bin\Debug\net8.0\DecodeStrings.dll
+C:\Users\Willkommen\source\repos\DecodeStrings\bin\Debug\net8.0\DecodeStrings.pdb
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.dll
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\refint\DecodeStrings.dll
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.pdb
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\DecodeStrings.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\DecodeStrings\obj\Debug\net8.0\ref\DecodeStrings.dll

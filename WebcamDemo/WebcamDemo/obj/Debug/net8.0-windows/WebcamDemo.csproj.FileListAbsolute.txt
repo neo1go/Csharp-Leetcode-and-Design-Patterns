@@ -1,0 +1,5 @@
+C:\Users\Willkommen\source\repos\WebcamDemo\WebcamDemo\obj\Debug\net8.0-windows\WebcamDemo.csproj.AssemblyReference.cache
+C:\Users\Willkommen\source\repos\WebcamDemo\WebcamDemo\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Willkommen\source\repos\WebcamDemo\WebcamDemo\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Willkommen\source\repos\WebcamDemo\WebcamDemo\obj\Debug\net8.0-windows\WebcamDemo_MarkupCompile.cache
+C:\Users\Willkommen\source\repos\WebcamDemo\WebcamDemo\obj\Debug\net8.0-windows\WebcamDemo_MarkupCompile.lref

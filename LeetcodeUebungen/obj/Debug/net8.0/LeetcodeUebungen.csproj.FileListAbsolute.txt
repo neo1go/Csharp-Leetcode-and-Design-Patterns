@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\bin\Debug\net8.0\LeetcodeUebungen.exe
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\bin\Debug\net8.0\LeetcodeUebungen.deps.json
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\bin\Debug\net8.0\LeetcodeUebungen.runtimeconfig.json
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\bin\Debug\net8.0\LeetcodeUebungen.dll
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\bin\Debug\net8.0\LeetcodeUebungen.pdb
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.dll
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\refint\LeetcodeUebungen.dll
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.pdb
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\LeetcodeUebungen.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\LeetcodeUebungen\obj\Debug\net8.0\ref\LeetcodeUebungen.dll

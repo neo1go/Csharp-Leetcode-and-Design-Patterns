@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\Stack\bin\Debug\net8.0\Stack.exe
+C:\Users\Willkommen\source\repos\Stack\bin\Debug\net8.0\Stack.deps.json
+C:\Users\Willkommen\source\repos\Stack\bin\Debug\net8.0\Stack.runtimeconfig.json
+C:\Users\Willkommen\source\repos\Stack\bin\Debug\net8.0\Stack.dll
+C:\Users\Willkommen\source\repos\Stack\bin\Debug\net8.0\Stack.pdb
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.dll
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\refint\Stack.dll
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.pdb
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\Stack.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\Stack\obj\Debug\net8.0\ref\Stack.dll

@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\bin\Debug\net8.0\ConstructMaximumBinaryTree.exe
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\bin\Debug\net8.0\ConstructMaximumBinaryTree.deps.json
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\bin\Debug\net8.0\ConstructMaximumBinaryTree.runtimeconfig.json
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\bin\Debug\net8.0\ConstructMaximumBinaryTree.dll
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\bin\Debug\net8.0\ConstructMaximumBinaryTree.pdb
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.dll
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\refint\ConstructMaximumBinaryTree.dll
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.pdb
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ConstructMaximumBinaryTree.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\ConstructMaximumBinaryTree\ConstructMaximumBinaryTree\obj\Debug\net8.0\ref\ConstructMaximumBinaryTree.dll

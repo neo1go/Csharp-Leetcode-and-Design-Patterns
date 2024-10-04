@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\bin\Debug\net8.0\RemoveNthNodeFromLinkedList.exe
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\bin\Debug\net8.0\RemoveNthNodeFromLinkedList.deps.json
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\bin\Debug\net8.0\RemoveNthNodeFromLinkedList.runtimeconfig.json
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\bin\Debug\net8.0\RemoveNthNodeFromLinkedList.dll
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\bin\Debug\net8.0\RemoveNthNodeFromLinkedList.pdb
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.dll
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\refint\RemoveNthNodeFromLinkedList.dll
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.pdb
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\RemoveNthNodeFromLinkedList.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\RemoveNthNodeFromLinkedList\obj\Debug\net8.0\ref\RemoveNthNodeFromLinkedList.dll

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SpassApp": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

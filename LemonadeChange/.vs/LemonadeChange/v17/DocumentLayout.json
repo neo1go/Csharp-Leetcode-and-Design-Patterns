@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,14 +37,18 @@
               "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\LemonadeChange\\LemonadeChange\\Program.cs",
               "RelativeDocumentMoniker": "LemonadeChange\\Program.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\LemonadeChange\\LemonadeChange\\Program.cs*",
-              "RelativeToolTip": "LemonadeChange\\Program.cs*",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAQwEAAAAAlAAAA",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\LemonadeChange\\LemonadeChange\\Program.cs",
+              "RelativeToolTip": "LemonadeChange\\Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwEAAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T06:26:23.724Z",
               "EditorCaption": ""

@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\bin\Debug\net8.0\Best Time to sell Stock.exe
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\bin\Debug\net8.0\Best Time to sell Stock.deps.json
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\bin\Debug\net8.0\Best Time to sell Stock.runtimeconfig.json
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\bin\Debug\net8.0\Best Time to sell Stock.dll
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\bin\Debug\net8.0\Best Time to sell Stock.pdb
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.dll
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\refint\Best Time to sell Stock.dll
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.pdb
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\Best Time to sell Stock.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\Best Time to sell Stock\obj\Debug\net8.0\ref\Best Time to sell Stock.dll

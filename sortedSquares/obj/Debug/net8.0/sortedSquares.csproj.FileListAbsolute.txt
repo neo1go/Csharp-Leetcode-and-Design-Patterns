@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\sortedSquares\bin\Debug\net8.0\sortedSquares.exe
+C:\Users\Willkommen\source\repos\sortedSquares\bin\Debug\net8.0\sortedSquares.deps.json
+C:\Users\Willkommen\source\repos\sortedSquares\bin\Debug\net8.0\sortedSquares.runtimeconfig.json
+C:\Users\Willkommen\source\repos\sortedSquares\bin\Debug\net8.0\sortedSquares.dll
+C:\Users\Willkommen\source\repos\sortedSquares\bin\Debug\net8.0\sortedSquares.pdb
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.dll
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\refint\sortedSquares.dll
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.pdb
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\sortedSquares.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\sortedSquares\obj\Debug\net8.0\ref\sortedSquares.dll

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WebcamDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebcamDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="640" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="StartButton" Content="Start" Height="40" Width="40"  Margin="5" Click="StartButton_Click" />
+            <Button x:Name="StopButton" Content="Stop" Height="40" Width="40" Margin="5" Click="StopButton_Click"/>
+
+        </StackPanel>
+
+        <Image Grid.Row="1" x:Name="WebcamImage" Stretch="Fill"/>
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\MergeMaxValue\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFC6824-55B5-437F-AE47-81E55B1E97A4}|MergeMaxValue\\MergeMaxValue.csproj|c:\\users\\willkommen\\source\\repos\\mergemaxvalue\\mergemaxvalue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFC6824-55B5-437F-AE47-81E55B1E97A4}|MergeMaxValue\\MergeMaxValue.csproj|solutionrelative:mergemaxvalue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\MergeMaxValue\\MergeMaxValue\\Program.cs",
+              "RelativeDocumentMoniker": "MergeMaxValue\\Program.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\MergeMaxValue\\MergeMaxValue\\Program.cs",
+              "RelativeToolTip": "MergeMaxValue\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T11:24:04.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

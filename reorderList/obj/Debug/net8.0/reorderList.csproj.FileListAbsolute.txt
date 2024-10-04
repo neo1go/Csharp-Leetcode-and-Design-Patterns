@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\reorderList\bin\Debug\net8.0\reorderList.exe
+C:\Users\Willkommen\source\repos\reorderList\bin\Debug\net8.0\reorderList.deps.json
+C:\Users\Willkommen\source\repos\reorderList\bin\Debug\net8.0\reorderList.runtimeconfig.json
+C:\Users\Willkommen\source\repos\reorderList\bin\Debug\net8.0\reorderList.dll
+C:\Users\Willkommen\source\repos\reorderList\bin\Debug\net8.0\reorderList.pdb
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.dll
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\refint\reorderList.dll
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.pdb
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\reorderList.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\reorderList\obj\Debug\net8.0\ref\reorderList.dll

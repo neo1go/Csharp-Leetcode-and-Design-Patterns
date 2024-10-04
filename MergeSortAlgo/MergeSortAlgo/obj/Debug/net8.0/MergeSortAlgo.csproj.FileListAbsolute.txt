@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\bin\Debug\net8.0\MergeSortAlgo.exe
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\bin\Debug\net8.0\MergeSortAlgo.deps.json
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\bin\Debug\net8.0\MergeSortAlgo.runtimeconfig.json
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\bin\Debug\net8.0\MergeSortAlgo.dll
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\bin\Debug\net8.0\MergeSortAlgo.pdb
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.dll
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\refint\MergeSortAlgo.dll
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.pdb
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\MergeSortAlgo.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\MergeSortAlgo\MergeSortAlgo\obj\Debug\net8.0\ref\MergeSortAlgo.dll

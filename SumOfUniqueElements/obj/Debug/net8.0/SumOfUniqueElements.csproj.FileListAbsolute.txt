@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\bin\Debug\net8.0\SumOfUniqueElements.exe
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\bin\Debug\net8.0\SumOfUniqueElements.deps.json
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\bin\Debug\net8.0\SumOfUniqueElements.runtimeconfig.json
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\bin\Debug\net8.0\SumOfUniqueElements.dll
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\bin\Debug\net8.0\SumOfUniqueElements.pdb
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.dll
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\refint\SumOfUniqueElements.dll
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.pdb
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\SumOfUniqueElements.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\SumOfUniqueElements\obj\Debug\net8.0\ref\SumOfUniqueElements.dll

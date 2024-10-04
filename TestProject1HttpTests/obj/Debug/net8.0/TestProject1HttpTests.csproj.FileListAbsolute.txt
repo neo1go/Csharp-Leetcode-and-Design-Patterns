@@ -1,0 +1,5 @@
+C:\Users\Willkommen\source\repos\TestProject1HttpTests\obj\Debug\net8.0\TestProject1HttpTests.csproj.AssemblyReference.cache
+C:\Users\Willkommen\source\repos\TestProject1HttpTests\obj\Debug\net8.0\TestProject1HttpTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\TestProject1HttpTests\obj\Debug\net8.0\TestProject1HttpTests.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\TestProject1HttpTests\obj\Debug\net8.0\TestProject1HttpTests.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\TestProject1HttpTests\obj\Debug\net8.0\TestProject1HttpTests.csproj.CoreCompileInputs.cache

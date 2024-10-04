@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\bin\Debug\net6.0\CollatzTest.exe
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\bin\Debug\net6.0\CollatzTest.deps.json
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\bin\Debug\net6.0\CollatzTest.runtimeconfig.json
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\bin\Debug\net6.0\CollatzTest.dll
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\bin\Debug\net6.0\CollatzTest.pdb
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.dll
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\refint\CollatzTest.dll
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.pdb
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\CollatzTest.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\CollatzTest\CollatzTest\obj\Debug\net6.0\ref\CollatzTest.dll

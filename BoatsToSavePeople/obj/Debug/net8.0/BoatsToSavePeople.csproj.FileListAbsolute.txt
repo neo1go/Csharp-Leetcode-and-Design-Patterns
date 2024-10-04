@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\bin\Debug\net8.0\BoatsToSavePeople.exe
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\bin\Debug\net8.0\BoatsToSavePeople.deps.json
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\bin\Debug\net8.0\BoatsToSavePeople.runtimeconfig.json
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\bin\Debug\net8.0\BoatsToSavePeople.dll
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\bin\Debug\net8.0\BoatsToSavePeople.pdb
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.dll
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\refint\BoatsToSavePeople.dll
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.pdb
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\BoatsToSavePeople.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\BoatsToSavePeople\obj\Debug\net8.0\ref\BoatsToSavePeople.dll

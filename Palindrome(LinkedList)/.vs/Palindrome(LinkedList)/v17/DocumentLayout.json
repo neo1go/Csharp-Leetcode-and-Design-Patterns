@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\Palindrome(LinkedList)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39D9E1A4-10F3-40F6-B102-5BF4ADC52A91}|Palindrome(LinkedList).csproj|c:\\users\\willkommen\\source\\repos\\palindrome(linkedlist)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D9E1A4-10F3-40F6-B102-5BF4ADC52A91}|Palindrome(LinkedList).csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Palindrome(LinkedList)\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Palindrome(LinkedList)\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T07:58:15.054Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

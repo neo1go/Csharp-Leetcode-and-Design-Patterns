@@ -1,0 +1,97 @@
+﻿<Window x:Class="Turnierplaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Turnierplaner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="520" Width="1200">
+
+    <Window.Resources>
+        <!-- Definiere die DataTemplates im Ressourcen-Bereich -->
+        <DataTemplate x:Key="PersonDataTemplate">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Vorname}" Margin="5"/>
+                <TextBlock Text="{Binding Nachname}" Margin="5"/>
+                <TextBlock Text="{Binding Id}" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="PersonDataTemplate2">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Vorname}" Margin="5"/>
+                <TextBlock Text="{Binding Nachname}" Margin="5"/>
+                <TextBlock Text="{Binding Id, StringFormat={}{0:D8}}" Margin="5"/>
+            </StackPanel>
+        </DataTemplate>
+        <!--hier kommen noch mehr DataTemplates für die Teams -->
+    </Window.Resources>
+
+    <Grid Margin="0,10,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260*" />
+            <ColumnDefinition Width="207*" />
+            <ColumnDefinition Width="247*" />
+            <ColumnDefinition Width="231*" />
+            <ColumnDefinition Width="254*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- StackPanel für die Buttons und Labels -->
+        <StackPanel x:Name="createNewPlayer_Click" Grid.Column="0" Background="LightBlue"  Margin="0,80,0,0">
+            <Label Content="Spieler/in  Vorname" FontSize="14"/>
+            <Label Content="Spieler/rin Nachname" FontSize="14"/>
+            <Label Content="Adresse" FontSize="14"/>
+            <Label Content="TelNr:" FontSize="14"/>
+            <Label Content="Emailadresse:" FontSize="14"/>
+            <Label Content="Gewonnene Matches" FontSize="14"/>
+            <Label Content="Verlorene Matches" FontSize="14"/>
+            <Button  FontSize="14" Padding="5" HorizontalAlignment="Center" Content="Neuen Spieler erstellen" Click="CreateNewPlayer_Click"/>
+            <Button  FontSize="14" Padding="5" HorizontalAlignment="Center" Content="Spieler/in zu Matchliste hinzufügen" Click="AddPlayertoActiveList_Click"/>
+            <Button  FontSize="14" Padding="5" HorizontalAlignment="Center" Content="Spieler/in aus Matchliste entfernen" Click="RemovePlayerFromActiveList_Click"/>
+            <Button  FontSize="14" Padding="5" HorizontalAlignment="Center" Content="Spieler/in speichern" Click="SavePlayer_Click"/>
+            <Button  FontSize="14" Padding="5" HorizontalAlignment="Center" Content="Spieler/in Eintrag ändern" Click="AlterPlayer_Click"/>
+            <Button  FontSize="14" Padding="5" HorizontalAlignment="Center" Content="Spieler/in dauerhaft löschen" Click="ErasePlayer_Click" ToolTip="Alle Einträge mit dem gleichen Nachnamen werden gelöscht"/>
+        </StackPanel>
+
+        <!-- StackPanel für die Eingabefelder -->
+        <StackPanel Background="Aquamarine" Margin="260,80,0,0" Grid.ColumnSpan="2">
+            <TextBox x:Name="firstName_Input" Height="22" Background="GreenYellow" Margin="0,6,0,3"/>
+            <TextBox x:Name="lastName_Input" Height="22" Background="Beige" Margin="0,3,0,3"/>
+            <TextBox x:Name="adress_Input" Height="22" Background="GreenYellow" Margin="0,3,0,3"/>
+            <TextBox x:Name="telNr_Input" Height="22" Background="Beige" Margin="0,3,0,3"/>
+            <TextBox x:Name="eMail_Input" Height="22" Background="GreenYellow" Margin="0,3,0,3"/>
+            <TextBox x:Name="wonMatches_Input" Height="22" Background="Beige" Margin="0,3,0,3"/>
+            <TextBox x:Name="lostMatches_Input" Height="22" Background="GreenYellow"/>
+        </StackPanel>
+
+        <!-- StackPanel und Listboxen für alle Spieler -->
+        <StackPanel Grid.Column="2" Margin="1,50,5,0">
+            <Label HorizontalContentAlignment="Center" Content="Alle Spieler" Background="DarkSlateGray"/>
+            <ListBox x:Name="allPlayerList_Click" Height="200" ItemTemplate="{StaticResource PersonDataTemplate}"/>
+            <Label HorizontalContentAlignment="Center" Content="Alle Teams" Background="Crimson"/>
+            <ListBox x:Name="allTeamList_Click" Height="150"/>
+        </StackPanel>
+
+        <!-- StackPanel und Listboxen für Turnierspieler -->
+        <StackPanel Grid.Column="3" Margin="0,50,1,0" Background="DarkCyan">
+            <Label HorizontalAlignment="Center" Content="Turnier Spieler"/>
+            <ListBox x:Name="activePlayerList_Click" Height="200" Background="AliceBlue" ItemTemplate="{StaticResource PersonDataTemplate2}"/>
+            <Label Content="Turnier Teams" HorizontalAlignment="Center" Background="DarkCyan"/>
+            <ListBox x:Name="activeTeams_Click" Background="AliceBlue" Height="170"/>
+        </StackPanel>
+
+        <!-- StackPanel mit Button für die Teams und Turniere -->
+        <StackPanel Grid.Column="4" Margin="0,80,0,0" Background="Coral">
+            <Button Content="Teamname eingeben" HorizontalAlignment="Center" FontSize="14" Padding="10" Click="CreateTeam_Click"/>
+            <Button Content="Team zu Turnierliste hinzufügen" FontSize="14" Padding="10" Click="AddTeamToMatchList_Click"/>
+            <Button Content="Team aus Turnierliste entfernen" FontSize="14" Padding="10" Click="RemoveTeamFromMatchList_Click"/>
+            <Button Content="Team komplett löschen" FontSize="14" Padding="10" Click="EraseTeam_Click"/>
+            <Button Content="Spieler zu Team hinzufügen" FontSize="14" Padding="10" Click="AddPlayerToTeam_Click"/>
+            <Button Content="Spieler aus Team entfernen" FontSize="14" Padding="10" Click="RemovePlayerFromTeam_Click"/>
+            <Button Content="Turnier Jeder gegen Jeden erstellen" FontSize="14" Padding="10" Margin="0,15,0,0" Click="CreateSinglePlayerMatch_Click"/>
+            <Button Content="Team Turnier erstellen" FontSize="14" Padding="10" Margin="0,5,0,0" Click="CreateTeamMatch_Click"/>
+            <Button Content="Preisgeld berechnen" FontSize="14" Padding="10" Margin="0,5,0,0" Click="PrizeMoney_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

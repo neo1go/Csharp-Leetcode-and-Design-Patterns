@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\Qeue\bin\Debug\net8.0\Qeue.exe
+C:\Users\Willkommen\source\repos\Qeue\bin\Debug\net8.0\Qeue.deps.json
+C:\Users\Willkommen\source\repos\Qeue\bin\Debug\net8.0\Qeue.runtimeconfig.json
+C:\Users\Willkommen\source\repos\Qeue\bin\Debug\net8.0\Qeue.dll
+C:\Users\Willkommen\source\repos\Qeue\bin\Debug\net8.0\Qeue.pdb
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.dll
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\refint\Qeue.dll
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.pdb
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\Qeue.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\Qeue\obj\Debug\net8.0\ref\Qeue.dll

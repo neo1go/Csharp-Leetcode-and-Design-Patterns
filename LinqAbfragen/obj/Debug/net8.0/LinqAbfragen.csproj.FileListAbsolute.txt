@@ -1,0 +1,14 @@
+C:\Users\Willkommen\source\repos\LinqAbfragen\bin\Debug\net8.0\LinqAbfragen.exe
+C:\Users\Willkommen\source\repos\LinqAbfragen\bin\Debug\net8.0\LinqAbfragen.deps.json
+C:\Users\Willkommen\source\repos\LinqAbfragen\bin\Debug\net8.0\LinqAbfragen.runtimeconfig.json
+C:\Users\Willkommen\source\repos\LinqAbfragen\bin\Debug\net8.0\LinqAbfragen.dll
+C:\Users\Willkommen\source\repos\LinqAbfragen\bin\Debug\net8.0\LinqAbfragen.pdb
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.AssemblyInfoInputs.cache
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.AssemblyInfo.cs
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.csproj.CoreCompileInputs.cache
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.dll
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\refint\LinqAbfragen.dll
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.pdb
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\LinqAbfragen.genruntimeconfig.cache
+C:\Users\Willkommen\source\repos\LinqAbfragen\obj\Debug\net8.0\ref\LinqAbfragen.dll

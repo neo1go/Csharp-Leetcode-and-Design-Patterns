@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Turnierplaner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f256e7bf2ff958bac448538a9688edc39abfbcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Turnierplaner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Turnierplaner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

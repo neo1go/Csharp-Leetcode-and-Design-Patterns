@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\Turnierplaner.csproj",
+      "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\Turnierplaner.csproj",
       "projectName": "Turnierplaner",
-      "projectPath": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\Turnierplaner.csproj",
+      "projectPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\Turnierplaner.csproj",
       "packagesPath": "C:\\Users\\Willkommen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\obj\\",
+      "outputPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

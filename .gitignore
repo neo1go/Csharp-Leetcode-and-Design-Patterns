@@ -1,0 +1,11 @@
+# Git Ignore File 
+
+# Ignoriere die bin- und obj-Ordner
+bin/
+obj/
+
+# Ignoriere alle .dll-Dateien
+*.dll
+
+# Ignoriere die *.log-Dateien
+*.log

@@ -9,3 +9,6 @@ obj/
 
 # Ignoriere die *.log-Dateien
 *.log
+
+# Ignoriere die .vs Dateien
+*.vs/

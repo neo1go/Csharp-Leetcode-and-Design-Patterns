@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willkommen\\source\\repos\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj": {}
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willkommen\\source\\repos\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj": {
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj",
         "projectName": "ContactsAPI",
-        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj",
+        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\ContactsAPI.csproj",
         "packagesPath": "C:\\Users\\Willkommen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\ContactsAPI\\ContactsAPI\\obj\\",
+        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,12 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -88,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

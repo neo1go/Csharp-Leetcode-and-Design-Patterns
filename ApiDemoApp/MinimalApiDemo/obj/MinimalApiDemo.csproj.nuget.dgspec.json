@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willkommen\\source\\repos\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj": {}
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willkommen\\source\\repos\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj": {
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj",
         "projectName": "MinimalApiDemo",
-        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj",
+        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ApiDemoApp\\MinimalApiDemo\\MinimalApiDemo.csproj",
         "packagesPath": "C:\\Users\\Willkommen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\ApiDemoApp\\MinimalApiDemo\\obj\\",
+        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ApiDemoApp\\MinimalApiDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

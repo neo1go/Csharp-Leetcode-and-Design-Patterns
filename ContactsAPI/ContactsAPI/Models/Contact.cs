@@ -1,5 +1,7 @@
 ﻿namespace ContactsAPI.Models
 {
+
+    //Klassenstruktur der anzulegenden Daten
     public class Contact
     {
         public Guid Id { get; set; }

@@ -18,12 +18,14 @@ builder.Services.AddSwaggerGen();
 //neu mit Microsoft SQL Server Magagement Studio SSMS verbinden
 builder.Services.AddDbContext<ContactsAPIDbContext>(options => 
 options.UseSqlServer(builder.Configuration.GetConnectionString("ContactsApiConnectionString"))); //String aus appsettings.json
+                                                                              //der die Zugangsdaten und Beechtigungen enthält
 
 
 
-var app = builder.Build();  //die Grundvariable auf der das ganze Projekt ruht
+var app = builder.Build();  //die Grundvariable auf der die ganzen Abfragen im Moment ruhen
 
 // Configure the HTTP request pipeline.
+//IsDevelopment kann dann auch umgestellt werden
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -32,6 +34,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+//Bin mir nicht sicher ob ich hier auch die Authorisierung komplett für Übungszwecke abschalten kann wenn ich
+//auskommentiere (in appsettings.json müsste dann die Zeile geändert werden für "ContactsApiConnectionString"
 app.UseAuthorization();
 
 app.MapControllers();

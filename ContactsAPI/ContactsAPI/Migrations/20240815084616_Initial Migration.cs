@@ -9,6 +9,8 @@ namespace ContactsAPI.Migrations
     public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
+        /// 
+        /// Die Struktur für die Datenbankfelder mit den Relationennamen als gesamtes Relationenschema basierend auf 
         protected override void Up(MigrationBuilder migrationBuilder) //erzeugt neue Table in sql DB
         {
             migrationBuilder.CreateTable(

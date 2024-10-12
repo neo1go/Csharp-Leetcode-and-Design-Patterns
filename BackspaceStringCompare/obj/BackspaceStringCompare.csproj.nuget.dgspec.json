@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willkommen\\source\\repos\\BackspaceStringCompare\\BackspaceStringCompare.csproj": {}
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\BackspaceStringCompare\\BackspaceStringCompare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willkommen\\source\\repos\\BackspaceStringCompare\\BackspaceStringCompare.csproj": {
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\BackspaceStringCompare\\BackspaceStringCompare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\BackspaceStringCompare\\BackspaceStringCompare.csproj",
+        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\BackspaceStringCompare\\BackspaceStringCompare.csproj",
         "projectName": "BackspaceStringCompare",
-        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\BackspaceStringCompare\\BackspaceStringCompare.csproj",
+        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\BackspaceStringCompare\\BackspaceStringCompare.csproj",
         "packagesPath": "C:\\Users\\Willkommen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\BackspaceStringCompare\\obj\\",
+        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\BackspaceStringCompare\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

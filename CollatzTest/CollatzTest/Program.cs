@@ -27,9 +27,10 @@
             Console.WriteLine("Bitte eine Zahl eingeben");
             string? input = Console.ReadLine();
 
+            //es wird versucht, den string in eine long Variable umzuwandeln
             if (long.TryParse(input, out long number))
             {
-                if (number <= long.MaxValue)
+                if (number <= long.MaxValue)  //MaxValue ist ein c# Befehl für einen Max-Wert für numerische Datentypen
                 {
                     long result = CollatzCalc(number);
                     Console.WriteLine($"Das Endergebnis ist {result}.");

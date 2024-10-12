@@ -16,9 +16,11 @@ namespace ContactsAPI.Controllers
             this.dbContext = dbContext;
         }
 
-        [HttpGet]
+        [HttpGet]//wird in URL ausgeführt, Rückgabetyp ist ein Objekt com Typ IActionResult 
+                 //IActionResult stellt nur einen Task bereit um alle HTTP Requests zu behandeln
         public async Task<IActionResult> GetAllContacts()            //Methode
         {
+                                    //Contacts ist die Property die bei DBSet Queries einleiten kann
             return Ok(await dbContext.Contacts.ToListAsync());  //Hier wird DBSet ausgelöst von der Property Contacts
         }
 
@@ -34,7 +36,7 @@ namespace ContactsAPI.Controllers
             return Ok(contact);
         }
 
-        [HttpPost]
+        [HttpPost]//Wird im Body ausgeführt
         public async Task<IActionResult> AddContact(AddContactRequest addContactRequest)
         {
             var contact = new Contact()
@@ -60,7 +62,7 @@ namespace ContactsAPI.Controllers
         public async Task<IActionResult> UpdateContact([FromRoute] Guid id, UpdateContactRequest updateContactRequest)
         //Die Bezeichnung id muß identisch sein mit route
         {
-            var contact = await dbContext.Contacts.FindAsync(id);
+            var contact = await dbContext.Contacts.FindAsync(id);    
             if (contact != null)
             {
                 contact.FullName = updateContactRequest.FullName;

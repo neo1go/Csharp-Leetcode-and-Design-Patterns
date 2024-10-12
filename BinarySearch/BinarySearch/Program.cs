@@ -15,14 +15,17 @@
             int rechterPtr = values.Length - 1;
             while (linkerPtr <= rechterPtr)
             {
-                int m = (linkerPtr + rechterPtr) / 2;        //Halbierung des Arrays bei jedem Durchlauf, so dass immer wieder halbiert wird
-                if (target > values[m])     //Zielwert größer als der Mittelwert
+                int m = (linkerPtr + rechterPtr) / 2;   //Halbierung des Arrays bei jedem Durchlauf,
+                                                        //so dass immer wieder halbiert wird. Die Variable muß innerhalb
+                                                        //des while Loop sein um jedesmal die neue Halbierung zu berechnen
+
+                if (target > values[m])     //Zielwert größer als der Mittelwert,wäre er gleich, würde direkt true returned werden
                 {
 
                     linkerPtr = m + 1;  //Pointer wird eins größer als m
 
                 }
-                else if (target < values[m]) //Zielwert kleiner als der Mittelwert
+                else if (target < values[m]) //Zielwert kleiner als der Mittelwert,wäre er gleich,würde direkt true returned werden
                 {
                     rechterPtr = m - 1;//Pointer wird eins kleiner als m
 

@@ -1,0 +1,73 @@
+
+
+/* Allgemeine Reset-Stile */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Flexrichtung auf Spalte setzen */
+    justify-content: center; /* Zentrieren in der Mitte */
+}
+
+.content {
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    flex: auto;
+}
+
+.header {
+    text-align: center; /* Überschrift zentriert */
+    padding: 20px; /* Optional für etwas Innenabstand */
+}
+
+.body {
+    display: flex; /* Flexbox für linke und rechte Seite */
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    align-items: center; /* Zentriert die Elemente in der Höhe */
+}
+
+.left-side {
+    background-color: aqua;
+    padding: 10px; /* Optional für etwas Innenabstand */
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+}
+
+.divider {
+    background-color: blueviolet;
+    width: 1px; /* Setze die Breite des Trenners */
+    height: auto; /* Höhe des Trenners wird an die Höhe des Inhalts angepasst */
+    margin: 0 20px; /* Abstand zum linken und rechten Element */
+}
+
+.right-side {
+    background-color: aqua;
+    padding: 10px; /* Optional für etwas Innenabstand */
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+}
+
+.button-container {
+    display: flex; /* Flexbox für die Button-Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    padding: 20px; /* Optional für etwas Innenabstand */
+    /* Höhe für die Button-Position anpassen */
+    margin-top: 15%;
+}
+
+.button {
+    padding: 10px 20px; /* Innenabstand für den Button */
+    background-color: blue; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe des Buttons */
+    border: none; /* Keine Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeiger-Cursor */
+}

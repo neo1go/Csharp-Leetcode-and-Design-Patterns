@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\",
+  "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\teammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\teammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\teammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\singletournamentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\singletournamentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\singletournamentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\teamtournamentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\teamtournamentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\teamtournamentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\singlepersonactivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\singlepersonactivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\singlepersonactivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\teamactivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\teamactivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\teamactivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\prizemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\prizemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\prizemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\teampassivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\teampassivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\teampassivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\matchupentrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\matchupentrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\matchupentrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\matchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\matchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\matchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\turnierplaner\\turnierplaner\\personpassivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|c:\\users\\willkommen\\source\\repos\\turnierplaner\\turnierplaner\\personpassivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7285D47-D611-4D34-957F-8E5EF057EBDF}|Turnierplaner\\Turnierplaner.csproj|solutionrelative:turnierplaner\\personpassivelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -62,8 +62,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -92,9 +96,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "PrizeModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\PrizeModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\PrizeModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\PrizeModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\PrizeModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\PrizeModel.cs",
               "RelativeToolTip": "Turnierplaner\\PrizeModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -104,9 +108,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TeamActiveList.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamActiveList.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamActiveList.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\TeamActiveList.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamActiveList.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamActiveList.cs",
               "RelativeToolTip": "Turnierplaner\\TeamActiveList.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -116,9 +120,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "SinglePersonActiveList.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\SinglePersonActiveList.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\SinglePersonActiveList.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\SinglePersonActiveList.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\SinglePersonActiveList.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\SinglePersonActiveList.cs",
               "RelativeToolTip": "Turnierplaner\\SinglePersonActiveList.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,11 +132,11 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "TeamTournamentModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamTournamentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamTournamentModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\TeamTournamentModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamTournamentModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamTournamentModel.cs",
               "RelativeToolTip": "Turnierplaner\\TeamTournamentModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAALAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T19:31:16.399Z"
             },
@@ -140,11 +144,11 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "SingleTournamentModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\SingleTournamentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\SingleTournamentModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\SingleTournamentModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\SingleTournamentModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\SingleTournamentModel.cs",
               "RelativeToolTip": "Turnierplaner\\SingleTournamentModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAALAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T19:29:20.616Z"
             },
@@ -152,46 +156,47 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "TeamModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\TeamModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamModel.cs",
               "RelativeToolTip": "Turnierplaner\\TeamModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T19:24:16.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PersonModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\PersonModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\PersonModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\PersonModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\PersonModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\PersonModel.cs",
               "RelativeToolTip": "Turnierplaner\\PersonModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T16:48:28.941Z"
+              "WhenOpened": "2024-09-03T16:48:28.941Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MainWindow.xaml.cs",
               "RelativeToolTip": "Turnierplaner\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAN4AAAAAAAAAAADgv+UAAABRAAAA",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T16:18:14.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Turnierplaner\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MainWindow.xaml",
               "RelativeToolTip": "Turnierplaner\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-03T13:29:57.804Z"
@@ -200,9 +205,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "TeamPassiveList.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamPassiveList.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamPassiveList.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\TeamPassiveList.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\TeamPassiveList.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\TeamPassiveList.cs",
               "RelativeToolTip": "Turnierplaner\\TeamPassiveList.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -212,9 +217,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "MatchupEntryModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MatchupEntryModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MatchupEntryModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\MatchupEntryModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MatchupEntryModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MatchupEntryModel.cs",
               "RelativeToolTip": "Turnierplaner\\MatchupEntryModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAB6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,9 +229,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "MatchModel.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MatchModel.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MatchModel.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\MatchModel.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\MatchModel.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\MatchModel.cs",
               "RelativeToolTip": "Turnierplaner\\MatchModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -236,9 +241,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "PersonPassiveList.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\PersonPassiveList.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\PersonPassiveList.cs",
               "RelativeDocumentMoniker": "Turnierplaner\\PersonPassiveList.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\Turnierplaner\\Turnierplaner\\PersonPassiveList.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\Turnierplaner\\Turnierplaner\\PersonPassiveList.cs",
               "RelativeToolTip": "Turnierplaner\\PersonPassiveList.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

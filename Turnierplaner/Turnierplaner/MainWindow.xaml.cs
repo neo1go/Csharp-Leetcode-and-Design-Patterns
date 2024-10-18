@@ -12,16 +12,19 @@ namespace Turnierplaner
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        private string passiveSinglePLayerFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenpassiveEinzelspieler\passiveSinglePlayer.csv";
-        private string activeSinglePLayersFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenaktiveEinzelspieler\activeSinglePlayers.csv";
-        private string passiveTeamFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenpassiveTeams\passiveTeam.csv";
-        private string activeTeamFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenaktiveTeams\activeTeam.csv";
+        // TODO - alle später wieder private setzen
+        public string passiveSinglePLayerFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenpassiveEinzelspieler\passiveSinglePlayer.csv";
+        public string activeSinglePLayersFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenaktiveEinzelspieler\activeSinglePlayers.csv";
+        public string passiveTeamFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenpassiveTeams\passiveTeam.csv";
+        public string activeTeamFilePath = @"C:\Users\Willkommen\source\repos\Turnierplaner\Turnierdaten\TurnierdatenaktiveTeams\activeTeam.csv";
         //Diese Collections werden erstellt um sofort die Listboxen mit Daten zu befüllen falls vorhanden
-        private ObservableCollection<PersonModel> allPlayers = new ObservableCollection<PersonModel>();
-        private ObservableCollection<PersonModel> activePlayers = new ObservableCollection<PersonModel>();
-        private ObservableCollection<TeamModel> allTeams = new ObservableCollection<TeamModel>();
-        private ObservableCollection<TeamModel> activeTeams = new ObservableCollection<TeamModel>();
+        //TODO - diese 4 nachher wieder private setzen
+        public ObservableCollection<PersonModel> allPlayers = new ObservableCollection<PersonModel>();
+        public ObservableCollection<PersonModel> activePlayers = new ObservableCollection<PersonModel>();
+        public ObservableCollection<TeamModel> allTeams = new ObservableCollection<TeamModel>();
+        public ObservableCollection<TeamModel> activeTeams = new ObservableCollection<TeamModel>();
+
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -39,7 +42,13 @@ namespace Turnierplaner
             LoadInitialPLayers();
         }
 
-        private void LoadInitialPLayers()
+        // TODO - Diese ListBox Objekte nachher wieder zerstören.
+        public ListBox allPlayersListBox => allPlayerList_Click;
+        public ListBox activePlayersListBox => activePlayerList_Click;
+
+        [STAThread] //STA - Single Threaded Apartment COM - Component Object Model
+        // TODO - später wieder private
+        public void LoadInitialPLayers()
         {
             // Lade passive Spieler
             var allPlayersData = ReadCsvFile(passiveSinglePLayerFilePath);
@@ -79,8 +88,8 @@ namespace Turnierplaner
         }
 
 
-
-        private void CreateNewPlayer_Click(object sender, RoutedEventArgs e)
+        // TODO - später wieder private
+        public void CreateNewPlayer_Click(object sender, RoutedEventArgs e)
         {
             string filePath = passiveSinglePLayerFilePath;
             //New Player wird immer zuerst zur passive List hinzugefügt per Button Klick
@@ -117,8 +126,10 @@ namespace Turnierplaner
             // TODO - passive List in Main Window muß refresht werden nur mit Vornamen und Nachnamen des/der Spieler/in
         }
 
+
+        // TODO - später wieder private
         //Hiermit wird ein Eintrag in die Textbox gemacht, egal ob es die aktive oder passive Box ist
-        private void UpdateListBox(ListBox listBox, PersonModel player)
+        public void UpdateListBox(ListBox listBox, PersonModel player)
         {
             if (listBox != null && player != null)
             {
@@ -131,8 +142,8 @@ namespace Turnierplaner
 
 
 
-
-        private void SwitchPlayerList(PersonModel player, ListBox sourceListBox, ListBox targetListBox)
+        //TODO - später wieder auf private setzen
+        public void SwitchPlayerList(PersonModel player, ListBox sourceListBox, ListBox targetListBox)
         {
             if (player == null || sourceListBox == null || targetListBox == null)
                 return;
@@ -155,8 +166,8 @@ namespace Turnierplaner
 
         }
 
-
-        private void AddPlayerToFile(string filePath, PersonModel player)
+        //TODO - später wieder private setzen
+        public void AddPlayerToFile(string filePath, PersonModel player)
         {
             string csvLine = $"{player.Id},{player.Vorname},{player.Nachname},{player.Adresse},{player.Email},{player.TelNr},{player.WonMatches},{player.LostMatches}";
 
@@ -173,9 +184,11 @@ namespace Turnierplaner
             }
         }
 
-        private void RemovePlayerFromFile(string filePath, string playerId)
+        //TODO - später wieder private setzen
+        public void RemovePlayerFromFile(string filePath, string playerId)
         {
             List<string> allLines = File.ReadAllLines(filePath).ToList();
+            //Hier werden alle Daten in die Variable geschrieben mit Ausnahme der zu löschenden Daten die anhand der playerId erkannt wurden.
             List<string> filteredLines = allLines.Where(line => !line.Split(',')[0].Equals(playerId, StringComparison.OrdinalIgnoreCase)).ToList();
 
             try
@@ -188,11 +201,15 @@ namespace Turnierplaner
             }
         }
 
+
+       
+
+        //Event Handler
         private void AddPlayertoActiveList_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
             {
-                PersonModel player = button.DataContext as PersonModel;
+                PersonModel? player = button.DataContext as PersonModel;
                 if (player != null)
                 {
                     string filePath = activeSinglePLayersFilePath;
@@ -212,6 +229,10 @@ namespace Turnierplaner
             }
         }
 
+
+
+
+        //Event Handler
         private void RemovePlayerFromActiveList_Click(object sender, RoutedEventArgs e)
         {// TODO - die sender Sache klappt nicht so richtig 
             PersonModel player = (PersonModel)sender;
@@ -220,12 +241,13 @@ namespace Turnierplaner
             string oldFilePath = activeSinglePLayersFilePath;
             ListBox sourceListBox = activePlayerList_Click;
             ListBox targetListBox = allPlayerList_Click;
-            SwitchPlayerList(player, sourceListBox, targetListBox);
-           // MovePlayerFromListToList(sourceListBox,player);
+
+            SwitchPlayerList(player, sourceListBox, targetListBox);           
             AddPlayerToFile(newFilePath, player);
             RemovePlayerFromFile(oldFilePath,player.Id.ToString());
 
         }
+
 
         private void MovePlayerFromListToList(ListBox listBox,PersonModel player)
         {
@@ -235,6 +257,10 @@ namespace Turnierplaner
                 collection?.Remove(player);
             }
         }
+
+
+
+        //Event Handler
         private void SavePlayer_Click(object sender, RoutedEventArgs e)
         {
             PersonModel person = new PersonModel();
@@ -270,6 +296,10 @@ namespace Turnierplaner
                 MessageBox.Show($"Fehler bim Speichern der Datei: {ex.Message}");
             }
         }
+
+
+
+        //Event Handler
         private void AlterPlayer_Click(object sender, RoutedEventArgs e)
         {
             string filePath = string.Empty;
@@ -288,9 +318,11 @@ namespace Turnierplaner
                     filePath = activeSinglePLayersFilePath;
                 }
             }
-
-            // EditEntry();///////////////////////////////////////////////////////////////////////
+            // NEU Versuch///////////////////////////////////////////////////////////////////////
+            EditEntry(person.Id,person.Vorname,person.Nachname,person.Adresse,person.Email,person.TelNr,person.WonMatches,person.LostMatches,filePath);
+            
         }
+
 
         //Hier werden nur die Daten eingelesen anhand des Filepath
         private List<string[]> ReadCsvFile(string filePath)
@@ -308,11 +340,15 @@ namespace Turnierplaner
             }
             return data;
         }
-        private void EditEntry(string id, string neuerVorname, string neuerNachname, string neueAdresse, string neueTelNummer, string neueEMail, string neueWonMatches, string neueLostMatches, string filePath)
+
+
+        
+
+        private void EditEntry(Guid id, string neuerVorname, string neuerNachname, string neueAdresse, string neueTelNummer, string neueEMail, int neueWonMatches, int neueLostMatches, string filePath)
         {
             var data = ReadCsvFile(filePath);
 
-            var entry = data.FirstOrDefault(row => row[0] == id);
+            var entry = data.FirstOrDefault(row => row[0].Equals(id));
             if (entry != null)
             {
                 entry[1] = neuerVorname;
@@ -320,8 +356,8 @@ namespace Turnierplaner
                 entry[3] = neueAdresse;
                 entry[4] = neueTelNummer;
                 entry[5] = neueEMail;
-                entry[6] = neueWonMatches;
-                entry[7] = neueLostMatches;
+                entry[6] = neueWonMatches.ToString();
+                entry[7] = neueLostMatches.ToString();
 
                 WriteCsvFile(data, filePath);
 

@@ -58,7 +58,7 @@ namespace ContactsAPI.Controllers
 
 
         [HttpPut]  //Attribute,auch Annotations also z.B. Metadaten genannt, in diesem Fall Routensteuerung im WebAPI-Projekt
-        [Route("{id:guid}")]
+        [Route("{id:guid}")]//Guid ist schon vorhanden und wird auch nicht verändert beim Update
         public async Task<IActionResult> UpdateContact([FromRoute] Guid id, UpdateContactRequest updateContactRequest)
         //Die Bezeichnung id muß identisch sein mit route
         {

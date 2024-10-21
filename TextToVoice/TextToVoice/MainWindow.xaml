@@ -56,7 +56,7 @@
          Click="BtnFontSmaller_Click"/>
 
         </StackPanel>
-
+    <!-- Textblock, der das aktuelle Wort anzeigt -->
         <TextBlock x:Name="info" Grid.Column="6" FontSize="30"/>
 
     </Grid>
@@ -67,7 +67,7 @@
           Grid.Row="2" FontSize="20"
           TextWrapping="Wrap"
           AcceptsReturn="True" AcceptsTab="True"
-          Background="LightGreen"
+          Background="LightCoral"
           PreviewMouseUp="Input_PreviousMouseUp"
           Margin="0,0,0,5"
           AutoWordSelection="True"

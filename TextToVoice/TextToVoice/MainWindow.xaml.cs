@@ -156,16 +156,27 @@ namespace TextToVoice
             }
         }
 
+        //Synthesizer Dispose Methode (kommt doch sehr häufig vor im code)
 
-
-        //EventHandler - Sprachausgabe beendet
-        private void Synthesizer_SpeakCompleted(object? sender, SpeakCompletedEventArgs e)
+        private void DisposeSynth()
         {
-            if (this.synthesizer != null)
+            if (this.synthesizer != null)  //this.synthesizer ist eine Instanzvariable und muß nicht extra übergeben werden.
             {
                 this.synthesizer.Dispose();
                 this.synthesizer = null;
             }
+        }
+
+        //EventHandler - Sprachausgabe beendet
+        private void Synthesizer_SpeakCompleted(object? sender, SpeakCompletedEventArgs e)
+        {
+            //if (this.synthesizer != null)
+            //{
+            //    this.synthesizer.Dispose();
+            //    this.synthesizer = null;
+            //}
+
+            DisposeSynth();
 
             this.BtnPause.Content = "Pause";
             this.BtnSay.IsEnabled = true;
@@ -224,11 +235,13 @@ namespace TextToVoice
         //EventHandler - Play Button
         private void BtnSay_Click(object sender, RoutedEventArgs e)
         {
-            if (synthesizer != null)
-            {
-                synthesizer.Dispose();
-                synthesizer = null;
-            }
+            //if (synthesizer != null)
+            //{
+            //    synthesizer.Dispose();
+            //    synthesizer = null;
+            //}
+            DisposeSynth();
+
             if (Input.Text.ToString().Trim().Length == 0)
             {
                 MessageBox.Show("please provide some text in the Input-Box to continue");
@@ -288,11 +301,14 @@ namespace TextToVoice
         //Helper Methode zum Abspielen des markierten Textes
         private void PlaySelectedText(string selectedText)
         {
-            if (synthesizer != null)
-            {
-                synthesizer.Dispose();
-                synthesizer = null;
-            }
+            //if (synthesizer != null)
+            //{
+            //    synthesizer.Dispose();
+            //    synthesizer = null;
+            //}
+
+            DisposeSynth();
+
             InitializeSynthesizer();
             if (this.synthesizer != null)
             {
@@ -316,11 +332,12 @@ namespace TextToVoice
             this.Input.SelectionLength = 0;
             this.Input.SelectionStart = 0;
 
-            if (this.synthesizer != null)
-            {
-                this.synthesizer.Dispose();
-                this.synthesizer = null;
-            }
+            //if (this.synthesizer != null)
+            //{
+            //    this.synthesizer.Dispose();
+            //    this.synthesizer = null;
+            //}
+            DisposeSynth();
 
         }
 
@@ -338,11 +355,13 @@ namespace TextToVoice
             this.cboRate.IsEnabled = true;
             this.BtnPlaySelection.IsEnabled = true;
 
-            if (this.synthesizer != null)
-            {
-                this.synthesizer.Dispose();
-                this.synthesizer = null;
-            }
+            //if (this.synthesizer != null)
+            //{
+            //    this.synthesizer.Dispose();
+            //    this.synthesizer = null;
+            //}
+
+            DisposeSynth() ;
         }
 
 

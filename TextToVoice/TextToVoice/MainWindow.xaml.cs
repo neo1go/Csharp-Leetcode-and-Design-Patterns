@@ -119,8 +119,6 @@ namespace TextToVoice
                             return (_v.VoiceInfo.Name.ToString());
 
                     }
-
-
                 }
                 return null;
             }

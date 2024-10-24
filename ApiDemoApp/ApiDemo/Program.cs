@@ -3,6 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
@@ -16,9 +17,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();        //schwenkt von http zu https
-
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers();  //hiermit werden die Controller erkannt
 
 app.Run();

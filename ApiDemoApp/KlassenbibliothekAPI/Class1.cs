@@ -1,4 +1,4 @@
-namespace ApiDemo
+﻿namespace KlassenbibliothekAPI
 {
     public class WeatherForecast
     {

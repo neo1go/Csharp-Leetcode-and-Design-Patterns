@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E5A59BD-0177-490B-9568-85D874D68A3E}|NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj|c:\\users\\willkommen\\source\\repos\\weatherprojectapp\\nunittestsweatherapp\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E5A59BD-0177-490B-9568-85D874D68A3E}|NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj|solutionrelative:nunittestsweatherapp\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|solutionrelative:weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\weatherprojectapp\\weatherproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\weatherproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|solutionrelative:weatherproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\weatherprojectapp\\weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|solutionrelative:weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0E5A59BD-0177-490B-9568-85D874D68A3E}|NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\nunittestsweatherapp\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E5A59BD-0177-490B-9568-85D874D68A3E}|NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj|solutionrelative:nunittestsweatherapp\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,28 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\NUnitTestsWeatherApp\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "NUnitTestsWeatherApp\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\NUnitTestsWeatherApp\\UnitTest1.cs",
-              "RelativeToolTip": "NUnitTestsWeatherApp\\UnitTest1.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T07:48:21.745Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WeatherProject\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml",
               "RelativeToolTip": "WeatherProject\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-22T06:21:51.554Z",
@@ -53,13 +68,26 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WeatherProject\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml.cs",
               "RelativeToolTip": "WeatherProject\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T06:21:49.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\NUnitTestsWeatherApp\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "NUnitTestsWeatherApp\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\NUnitTestsWeatherApp\\UnitTest1.cs",
+              "RelativeToolTip": "NUnitTestsWeatherApp\\UnitTest1.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T07:48:21.745Z",
               "EditorCaption": ""
             }
           ]

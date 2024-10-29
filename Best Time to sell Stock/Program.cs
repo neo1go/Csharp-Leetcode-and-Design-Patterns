@@ -1,12 +1,18 @@
-﻿public class Program
-{
+﻿
+//Greedy Approach bei dem der Maximal Wert ermitellt werden muß.
+// Es wird immer i mit dem buyPrice verglichen wobei buyPrice immer um 1 weitergesetzt wird.
+//Es wird auch mit 1 angefangen beim Iterieren da 0 als erster Wert gilt und dann später erhöht wird nach einem
+//kompletten Durchlauf.
 
+public class Program
+{
+    
     static int maxProfit(int[] prices)
     {
         //dynamic programming 
         int buyPrice = prices[0]; //fängt mit erstem Wert im Array an
 
-        int profit = 0;
+        int profit = 0; //Gewinnwert, der später mit Math.Max ermittelt wird.
 
         for (int i = 1; i < prices.Length; i++)
         {
@@ -18,7 +24,7 @@
             }
             else
             {
-                //wird ausgeführt, wenn kein neuer niedrigster Preis besteht, also die maximale Gewinnspanne
+                //wird ausgeführt, wenn kein neuer niedrigster Preis besteht, also die maximale Gewinnspanne - WICHTIG
                 int currentProfit = prices[i] - buyPrice;
                 profit = Math.Max(profit, currentProfit);
 

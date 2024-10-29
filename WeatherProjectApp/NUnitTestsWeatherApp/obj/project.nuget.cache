@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XaBXS7r3U7s=",
+  "dgSpecHash": "p+eybHLah7M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Willkommen\\source\\repos\\WeatherProjectApp\\NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj",
+  "projectFilePath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Willkommen\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Willkommen\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

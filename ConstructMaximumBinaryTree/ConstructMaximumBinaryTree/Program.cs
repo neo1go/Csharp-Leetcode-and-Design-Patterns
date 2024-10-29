@@ -101,10 +101,7 @@
             Console.WriteLine("[" + string.Join(", ", result) + "]");
         }
     }
-    
 
-
-   
 
 
 
@@ -125,17 +122,17 @@
 
 
 
-
-
     //Für die Erstellung der Knotenpunkte
     public class TreeNode
     {
+        //Felder
         public int val;
         public TreeNode? left;
         public TreeNode? right;
 
 
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        //Konstruktor
+        public TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
         {
             this.val = val;
             this.left = left;

@@ -4,7 +4,7 @@
     {
 
         //Hier wird der fertige Tree returned falls er nicht leer ist
-        public TreeNode ConstructMaximumBinaryTree(int[] nums)
+        public TreeNode? ConstructMaximumBinaryTree(int[] nums)
         {
             //wenn nums leer ist , null returnen
             if (nums == null || nums.Length == 0)
@@ -18,7 +18,7 @@
         }
 
         //Hier wird der Tree erstellt
-        private TreeNode build(int[] nums, int start, int end)
+        private TreeNode? build(int[] nums, int start, int end)
         {
             if (start > end) //um die Methode zu beenden, also ein Ausstieg
             {
@@ -38,7 +38,7 @@
             }
 
             //Erzeugen des Rootknotenpunktes mit dem Maxwert
-            TreeNode root = new TreeNode(nums[indexMax]);
+            TreeNode? root = new TreeNode(nums[indexMax]);
 
             root.left = build(nums, start, indexMax - 1);  //rekursiv, um die linke Seite jedesmal beim Aufruf mit dem Maxwert zu populieren
             root.right = build(nums, indexMax + 1, end); //rekursiv, um die rechte Seite jedesmal beim Aufruf mit dem Maxwert zu populieren
@@ -51,7 +51,7 @@
 
 
 
-        public void PrintTreeAsArray(TreeNode root)  //Dies ist der BFS Ansatz (Breadth-First-Search)
+        public void PrintTreeAsArray(TreeNode? root)  //Dies ist der BFS Ansatz (Breadth-First-Search)
                                                      //Es werden immer erst alle Knoten einer Ebene von links nach rechts besucht
         {
             if (root == null)
@@ -72,8 +72,9 @@
                 if (currentNode != null)
                 {
                     result.Add(currentNode.val.ToString()); //Der Knotenwert wird der Liste result als String hinzugefügt
-                    queue.Enqueue(currentNode.left);  //Erst wird das linke Kind des jeweiligen Knoten dem Queue-Objekt hinzugefügt
-                    queue.Enqueue(currentNode.right); //Dann wird das recht Kind des jeweiligen  Knoten dem Queue-Objekt hinzugefügt
+                    queue.Enqueue(currentNode.left!);  //Erst wird das linke Kind des jeweiligen Knoten dem Queue-Objekt hinzugefügt.
+                    queue.Enqueue(currentNode.right!); //Dann wird das recht Kind des jeweiligen  Knoten dem Queue-Objekt hinzugefügt.
+                                                       //(mit dem ! wird null ignoriert).                
                 }
                 else
                 {
@@ -110,9 +111,9 @@
         public static void Main(string[] args)
         {
             MaxBinaryTree maxBinaryTree = new MaxBinaryTree();  //leeres Objekt mit der Datenstruktur MaxBinaryTree
-            int[] nums = { 3, 2, 1, 6, 0, 5 };
+            int[] nums = { 3, 2, 1, 6, 0, 5 };  //Ergebnis sollte sein [6,3,5,null,2,0,null,null,1]
 
-            TreeNode root = maxBinaryTree.ConstructMaximumBinaryTree(nums); //Übergabe des Arrays an das Objekt und den Methodenaufruf
+            TreeNode? root = maxBinaryTree.ConstructMaximumBinaryTree(nums); //Übergabe des Arrays an das Objekt und den Methodenaufruf
 
 
             maxBinaryTree.PrintTreeAsArray(root); //Hier werden alle Werte als lesbares Array in der Konsole ausgegeben.

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CountNumberOfTeams")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ee3aafeb846ac4e9768b554ed62af3a3034d014")]
 [assembly: System.Reflection.AssemblyProductAttribute("CountNumberOfTeams")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CountNumberOfTeams")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

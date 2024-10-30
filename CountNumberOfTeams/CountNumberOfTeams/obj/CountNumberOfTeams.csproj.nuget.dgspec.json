@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willkommen\\source\\repos\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj": {}
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willkommen\\source\\repos\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj": {
+    "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj",
+        "projectUniqueName": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj",
         "projectName": "CountNumberOfTeams",
-        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj",
+        "projectPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\CountNumberOfTeams\\CountNumberOfTeams\\CountNumberOfTeams.csproj",
         "packagesPath": "C:\\Users\\Willkommen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\CountNumberOfTeams\\CountNumberOfTeams\\obj\\",
+        "outputPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\CountNumberOfTeams\\CountNumberOfTeams\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

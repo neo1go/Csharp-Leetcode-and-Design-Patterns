@@ -15,7 +15,7 @@
                  IsReadOnly="true"/>
         <Button Content="Lade Textfile"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Bottom"
+                VerticalAlignment="Center"
                 Width="120"
                 Height="50"
                 Margin="10"

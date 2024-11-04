@@ -1,5 +1,6 @@
 ﻿//Builder Design Pattern das oft verwendet wird, wenn die Objekte komplex gestaltet werden müssen,
-//aber immutable seien sollen. Z.B. Konfigurationsobjekte,Datenbankverbindungen oder API-Anfragen (HTTP-Requests)
+//aber immutable (unveränderbar) sein sollen. z.B.
+//Konfigurationsobjekte,Datenbankverbindungen oder API-Anfragen (HTTP-Requests)
 
 namespace BuilderPattern
 {
@@ -25,7 +26,7 @@ namespace BuilderPattern
         //Die Methoden werden je nach Erfordernis an das zu erzeugende Objekt angehangen
         public class Builder
         {
-            private string _url;
+            private string? _url;
             private string _method = "GET"; //Standardmethode
             private Dictionary<string, string> _headers = new Dictionary<string, string>();
             private string _body = string.Empty;

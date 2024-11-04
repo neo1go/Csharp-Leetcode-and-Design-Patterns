@@ -10,14 +10,17 @@ namespace Delegates
                                                       //müssen die gleiche Parameterliste besitzen
 
 
-        public event Notify? OnNotify;                  //Deklaration des Events
+        public event Notify? OnNotify;                  //Deklaration des Events.
+                                                        //An dieses Event wird nun ein String angehangen
+                                                        //in der Methode DoSomething.
 
 
 
         public void DoSomething()
         {
             // Ereignis auslösen
-            OnNotify?.Invoke("Event ausgelöst");            //Deklariertes Event OnNotify wird hier ausgelöst 
+            OnNotify?.Invoke("Event wurd gerade ausgelöst");            //Deklariertes Event OnNotify wird hier ausgelöst
+                                                            //und der String wird hier übergeben (message)
         }
     }
 
@@ -29,7 +32,7 @@ namespace Delegates
         public void Subscribe(Publisher pub)
         {
             pub.OnNotify += PrintMessage;                   // Hier wird der delegat erweitert indem
-            Console.WriteLine("Abonnent abonniert");        // OnNotify mit PrintMessage gekoppelt wird
+            Console.WriteLine("Abonnent hat hier abonniert");        // OnNotify mit PrintMessage gekoppelt wird
         }
 
         private void PrintMessage(string message)  //besitzt die gleiche Parameterliste, andernfalls könnten

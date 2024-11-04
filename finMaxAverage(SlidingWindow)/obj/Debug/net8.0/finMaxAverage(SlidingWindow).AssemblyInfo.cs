@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("finMaxAverage(SlidingWindow)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b99da31b5e894ab7499b12f629d692cd7c29de1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("finMaxAverage(SlidingWindow)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("finMaxAverage(SlidingWindow)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

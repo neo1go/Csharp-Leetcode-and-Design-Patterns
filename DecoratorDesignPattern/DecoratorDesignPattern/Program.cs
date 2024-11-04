@@ -6,7 +6,8 @@
 //Ein-und Ausgabestreams,
 //Erweiterung von Objekten, ohne eine große Klassenhierarchie zu erstellen,
 //Logging,Caching und Monitoring,
-//Änderung von Objekteigenschaften zur Laufzeit z.B. für Produkte in einem E-Commerce-System, die je nach laufender Aktion dekoriert werden.
+//Änderung von Objekteigenschaften zur Laufzeit z.B. für Produkte in einem E-Commerce-System,
+//die je nach laufender Aktion dekoriert werden.
 //Das Open/Closed Prinzip wird eingehalten.
 
 
@@ -14,14 +15,14 @@ namespace DecoratorPattern
 {
     public abstract class Getränk  //Stellt alle erforderlichen abstrakten Methoden bereit
     {
-        public abstract string Erklärung();
+        public abstract string GetraenkeSorte();
         public abstract double Kosten();
     }
 
     //Konkrete Komponente
     public class Kaffee : Getränk 
     {
-        public override string Erklärung()
+        public override string GetraenkeSorte()
         {
             return "Kaffee";
         }
@@ -40,9 +41,9 @@ namespace DecoratorPattern
         {
             _getränk = getränk;
         }
-        public override string Erklärung()
+        public override string GetraenkeSorte()
         {
-            return _getränk.Erklärung();
+            return _getränk.GetraenkeSorte();
         }
         public override double Kosten()
         {
@@ -60,9 +61,9 @@ namespace DecoratorPattern
         {
 
         }
-        public override string Erklärung()
+        public override string GetraenkeSorte()
         {
-            return _getränk.Erklärung() + ", Zucker";
+            return _getränk.GetraenkeSorte() + ", Zucker";
         }
 
         public override double Kosten()
@@ -77,9 +78,9 @@ namespace DecoratorPattern
         {
 
         }
-        public override string Erklärung()
+        public override string GetraenkeSorte()
         {
-            return _getränk.Erklärung() + ", Sahne";
+            return _getränk.GetraenkeSorte() + ", Sahne";
         }
 
         public override double Kosten()
@@ -94,9 +95,9 @@ namespace DecoratorPattern
         {
 
         }
-        public override string Erklärung()
+        public override string GetraenkeSorte()
         {
-            return _getränk.Erklärung() + ", Schokolade";
+            return _getränk.GetraenkeSorte() + ", Schokolade";
         }
 
         public override double Kosten()
@@ -112,25 +113,29 @@ namespace DecoratorPattern
             Getränk kaffee = new Kaffee();
 
             //Einfacher Kaffee
-            Console.WriteLine($"{kaffee.Erklärung()} {kaffee.Kosten().ToString("F2")}");
+            Console.WriteLine($"{kaffee.GetraenkeSorte()} {kaffee.Kosten().ToString("F2")}");
 
             //Kaffee mit Zucker (kaffee ist das Grundgetränk)
             kaffee = new Zucker(kaffee);  //Zucker wird hier hinzugefügt
-            Console.WriteLine($"{kaffee.Erklärung()} {kaffee.Kosten().ToString("F2")}");
+            Console.WriteLine($"{kaffee.GetraenkeSorte()} {kaffee.Kosten().ToString("F2")}");
 
             //Kaffee mit Sahne (wird an das Objekt angehängt (decorated))
             kaffee = new Sahne(kaffee);
-            Console.WriteLine($"{kaffee.Erklärung()} {kaffee.Kosten().ToString("F2")}");
+            Console.WriteLine($"{kaffee.GetraenkeSorte()} {kaffee.Kosten().ToString("F2")}");
 
             //Kaffee mit Zucker (wird an das Objekt angehängt)
             kaffee = new Schokolade(kaffee);
-            Console.WriteLine($"{kaffee.Erklärung()} {kaffee.Kosten().ToString("F2")}");
+            Console.WriteLine($"{kaffee.GetraenkeSorte()} {kaffee.Kosten().ToString("F2")}");
 
             //lässt sich mittels decorator einfach erweitern, in diesem Fall zu  2x Zucker
             kaffee = new Zucker(kaffee);
-            Console.WriteLine($"{kaffee.Erklärung()} {kaffee.Kosten().ToString("F2")}");
+            Console.WriteLine($"{kaffee.GetraenkeSorte()} {kaffee.Kosten().ToString("F2")}");
 
         }
-
+        //Eine Möglichkeit,die Dekoratoren zu entfernen ist, eine List oder Stack
+        //mit diesen Dekoratoren zu erstellen, und dann den entsprechenden Eintrag oder den letzten Eintrag
+        //zu löschen und das Objekt basierend auf diesen Daten neu zu erstellen.
+        //Beim Decorator Pattern gibt es keine normale Möglichkeit der Entfernung der Dekoratoren (Objekte) 
+        //sondern nur das Hinzufügen von Dekoratoren (Objekten).
     }
 }

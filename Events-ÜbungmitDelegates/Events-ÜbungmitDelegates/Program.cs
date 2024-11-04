@@ -12,10 +12,10 @@
         var data = new WeatherData();
 
 
-
         //Subscriber erstellen mit den Eigenschaften, in diesem Fall "Name"
         var schmitt = new Meterologe("Schmitt");
         var jones = new Meterologe("Jones");
+
         //Subscriber werden mittels "Subscribe" als Abonnenten hinzugefügt
         schmitt.Subscribe(data);
         jones.Subscribe(data);
@@ -44,7 +44,7 @@ public class WeatherData
     private float temperature;
     public float windSpeed;
 
-    //Konstruktor
+    //Konstruktor für Temperatur
     public float Temperature
     {
         get { return temperature; }
@@ -58,7 +58,7 @@ public class WeatherData
         }
     }
 
-    //Konstruktor
+    //Konstruktor für Windgeschwindigkeit
     public float WindSpeed
     {
         get
@@ -92,7 +92,7 @@ public class WeatherData
 }
 
 
-//Argumente für die beiden Events
+//Argumente für die beiden Events in Klassen definiert
 public class TemperatureExceededEventArgs : EventArgs
 {
     public double Temperature { get; }
@@ -115,7 +115,7 @@ public class WindSpeedExceededEventArgs : EventArgs
 }
 
 
-//Subscriber
+//Subscriber Klassen
 
 public class Meterologe
 {

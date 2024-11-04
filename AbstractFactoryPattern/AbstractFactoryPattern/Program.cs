@@ -21,7 +21,7 @@ namespace AbstractFactoryPattern
     }
 
 
-    //2. Konkrete Produkte für Windows
+    //2. Konkrete Produkte für Windows wobei die Interfaces implementiert werden
     public class WindowsButton : IButton
     {
         public void Render()
@@ -79,7 +79,7 @@ namespace AbstractFactoryPattern
         }
     }
 
-    //6. Konkrete Mac Factory die die konkrteten Create Methoden implementiert
+    //6. Konkrete Mac Factory, die die konkrteten Create-Methoden implementiert
     public class MacFactory : IGUIFactory
     {
         public IButton CreateButton()
@@ -99,7 +99,8 @@ namespace AbstractFactoryPattern
         private readonly IButton _button;  //Diese beiden Felder können später nicht mehr verändert werden
         private readonly ICheckbox _checkbox;//die Werte werden aus dem Konstruktor bereitgestellt
 
-        public Application(IGUIFactory factory) //Konstruktor, entweder für win oder mac Factory; dies ist Dependency Injection (DI)
+        public Application(IGUIFactory factory) //Konstruktor, entweder für win oder mac Factory;
+                                                //dies ist Dependency Injection (DI)
         {
             _button = factory.CreateButton();      //hier wird die polymorphe Methode CreateButton an die factory-Variable gekoppelt
             _checkbox = factory.CreateCheckbox();  //dasselbe mit der Checkbox, die je nach Factory (mac,windows) ausgewählt wird

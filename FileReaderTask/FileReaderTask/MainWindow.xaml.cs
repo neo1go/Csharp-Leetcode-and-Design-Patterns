@@ -25,6 +25,7 @@ namespace FileReaderTask
 
         }
 
+        //Event Handler der den Task ausführt bei Tastendruck
         private async void LoadFileButton_Click(object sender, RoutedEventArgs e)
         {
             try

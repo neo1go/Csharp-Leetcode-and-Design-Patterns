@@ -23,7 +23,7 @@ namespace BuilderPattern
         }
 
         //Der Builder kann als innere Klasse oder seperate Klasse verwendet werden
-        //Die Methoden werden je nach Erfordernis an das zu erzeugende Objekt angehangen
+        //Die Methoden werden je nach Erfordernis an das zu erzeugende Objekt angehangen.
         public class Builder
         {
             private string? _url;

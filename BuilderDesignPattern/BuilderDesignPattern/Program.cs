@@ -30,7 +30,10 @@ namespace BuilderPattern
             private string _method = "GET"; //Standardmethode
             private Dictionary<string, string> _headers = new Dictionary<string, string>();
             private string _body = string.Empty;
+            
 
+            //WICHTIG, dies ist die Hauptunterscheidung für das Builder Pattern -
+            //Die einzelnen Methoden, die mittels Method_Chaining aneinander gereiht werden können. 
             public Builder SetUrl(string url) //setzt die URL und gibt ein Builder Objekt zurück
             {
                 _url = url;
@@ -55,7 +58,7 @@ namespace BuilderPattern
                 return this;
             }
 
-            public HttpRequest Build()  //Baut das HttpRequest-Objekt
+            public HttpRequest BuildObject()  //Baut das HttpRequest-Objekt
             {
                 if (string.IsNullOrEmpty(_url))
                 {
@@ -77,6 +80,7 @@ namespace BuilderPattern
         }
 
         //Baut eine POST-Anfrage mit JSON-Daten
+        //WICHTIG - Beim return kommt das Method-Chaining zum Einsatz
         public HttpRequest BuildPostRequest(string url, string jsonBody)
         {
             return _builder    //hier werden die erforderlichen Methoden in gewünschter Form angehangen an das Objekt
@@ -84,7 +88,7 @@ namespace BuilderPattern
                 .SetMethod("POST")
                 .AddHeader("Content-Type", "application/json")
                 .SetBody(jsonBody)
-                .Build();
+                .BuildObject();
         }
 
         //Baut eine GET-Anfrage mit Token 
@@ -94,7 +98,7 @@ namespace BuilderPattern
                 .SetUrl(url)
                 .SetMethod("GET")
                 .AddHeader("Authorization", $"Bearer {token}")
-                .Build();
+                .BuildObject();
         }
     }
     public class Program
@@ -102,14 +106,14 @@ namespace BuilderPattern
 
         public static void Main(string[] args)
         {
-            var builder = new HttpRequest.Builder(); //Erstellung des builder Objektes
-            var director = new HttpRequestDirector(builder); //builder Objekt wird an director übergeben
+            var builderObject = new HttpRequest.Builder(); //Erstellung des builder Objektes
+            var directorObject = new HttpRequestDirector(builderObject); //builder Objekt wird an director übergeben
 
             //Beispiel für eine POST-Anfrage, die im director vorhanden ist
-            var postRequest = director.BuildPostRequest("https://api.example.com/data", "{ \"name\": \"John\" }");
+            var postRequest = directorObject.BuildPostRequest("https://api.example.com/data", "{ \"name\": \"John\" }");
 
             //Beispiel für eine GET-Anfrage mit Authentifizierung, die im director vorhanden ist
-            var getRequest = director.BuildGetRequestWithAuth("https://api.example.com/user", "myToken123");
+            var getRequest = directorObject.BuildGetRequestWithAuth("https://api.example.com/user", "myToken123");
 
             PrintHttpRequest(postRequest);
             PrintHttpRequest(getRequest);

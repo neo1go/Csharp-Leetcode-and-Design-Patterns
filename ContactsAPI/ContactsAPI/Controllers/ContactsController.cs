@@ -20,9 +20,10 @@ namespace ContactsAPI.Controllers
                  //IActionResult stellt nur einen Task bereit um alle HTTP Requests zu behandeln
         public async Task<IActionResult> GetAllContacts()            //Methode
         {
-                                    //Contacts ist die Property die bei DBSet Queries einleiten kann
+                                    //Contacts ist die Property, die bei DBSet Queries einleiten kann
             return Ok(await dbContext.Contacts.ToListAsync());  //Hier wird DBSet ausgelöst von der Property Contacts
         }
+
 
         [HttpGet]
         [Route("{id:guid}")]
@@ -35,6 +36,7 @@ namespace ContactsAPI.Controllers
             }
             return Ok(contact);
         }
+
 
         [HttpPost]//Wird im Body ausgeführt
         public async Task<IActionResult> AddContact(AddContactRequest addContactRequest)
@@ -56,8 +58,8 @@ namespace ContactsAPI.Controllers
             return Ok(contact);
         }
 
-
-        [HttpPut]  //Attribute,auch Annotations also z.B. Metadaten genannt, in diesem Fall Routensteuerung im WebAPI-Projekt
+        //Attribute,auch Annotations also z.B. Metadaten genannt, in diesem Fall Routensteuerung im WebAPI-Projekt
+        [HttpPut]  //Update
         [Route("{id:guid}")]//Guid ist schon vorhanden und wird auch nicht verändert beim Update
         public async Task<IActionResult> UpdateContact([FromRoute] Guid id, UpdateContactRequest updateContactRequest)
         //Die Bezeichnung id muß identisch sein mit route

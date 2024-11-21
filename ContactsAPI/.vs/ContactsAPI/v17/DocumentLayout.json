@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\contactsapi\\contactsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|solutionrelative:contactsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\contactsapi\\contactsapi\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|solutionrelative:contactsapi\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\contactsapi\\contactsapi\\models\\addcontactrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|solutionrelative:contactsapi\\models\\addcontactrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\contactsapi\\contactsapi\\models\\updatecontactrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|solutionrelative:contactsapi\\models\\updatecontactrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\contactsapi\\contactsapi\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CF75E1-E769-4DD8-85F8-E91B9984102F}|ContactsAPI\\ContactsAPI.csproj|solutionrelative:contactsapi\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateContactRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Models\\UpdateContactRequest.cs",
+              "RelativeDocumentMoniker": "ContactsAPI\\Models\\UpdateContactRequest.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Models\\UpdateContactRequest.cs",
+              "RelativeToolTip": "ContactsAPI\\Models\\UpdateContactRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:42:51.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddContactRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Models\\AddContactRequest.cs",
+              "RelativeDocumentMoniker": "ContactsAPI\\Models\\AddContactRequest.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Models\\AddContactRequest.cs",
+              "RelativeToolTip": "ContactsAPI\\Models\\AddContactRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:42:27.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactsAPI\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Models\\Contact.cs",
+              "RelativeToolTip": "ContactsAPI\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:39:08.752Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -47,14 +98,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ContactsAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ContactsAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-21T14:34:18.291Z",
+              "Title": "ContactsController.cs",
+              "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Controllers\\ContactsController.cs",
+              "RelativeDocumentMoniker": "ContactsAPI\\Controllers\\ContactsController.cs",
+              "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\ContactsAPI\\ContactsAPI\\Controllers\\ContactsController.cs",
+              "RelativeToolTip": "ContactsAPI\\Controllers\\ContactsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:37:59.783Z",
               "EditorCaption": ""
             }
           ]

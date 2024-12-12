@@ -53,7 +53,7 @@ namespace FactoryPattern
         public static ITier ErstelleTier(string tierArt)           //Rückgabetyp ist das Interface bzw. GeräuscheMachen()
                             // hier ist es egal,welche Klasse diese Methode aufruft da individuell entschieden werden kann
                             // solange diese Klassen auch das Interface ITier implementiert haben,
-                            // wird die richtige GeräuscheMachen() Methode auferufen. (Polymorphismus)
+                            // wird die richtige GeräuscheMachen() Methode aufgerufen. (Polymorphismus)
         {
             switch (tierArt)
             {

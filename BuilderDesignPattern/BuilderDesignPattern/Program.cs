@@ -74,6 +74,8 @@ namespace BuilderPattern
     public class HttpRequestDirector
     {
         private readonly HttpRequest.Builder _builder;
+
+        //Konstruktor
         public HttpRequestDirector(HttpRequest.Builder builder)
         {
             _builder = builder;

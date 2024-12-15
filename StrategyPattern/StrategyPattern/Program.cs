@@ -49,7 +49,8 @@
     {
         private ITransportStrategy? _strategy;   //Privates Feld für Komposition 
 
-        public void SetStrategy(ITransportStrategy strategy)//hiermit wird die tatsächliche Strategie festgelegt.
+        public void SetStrategy(ITransportStrategy strategy)//hiermit wird die tatsächliche Strategie initialisiert obwohl
+                                                            //dies kein Konstruktor ist.
         {
             _strategy = strategy;
         }

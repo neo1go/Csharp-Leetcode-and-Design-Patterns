@@ -47,15 +47,39 @@ namespace StacksimulationWithQueue
             queue2 = temp;
         }
 
+        
+
         public static void Main(string[] args)
         {
             Program program = new Program();
+
+           
             StackPush(program, 1);
             StackPush(program, 2);
             StackPush(program, 3);
+            StackPush(program, 4);
+            StackPush(program, 5);
+
+            Console.WriteLine("Inhalte von Queue 1:");
+            foreach(var item in program.queue1)
+            {
+                Console.Write(" "+item);
+            }
+            Console.WriteLine("");
+           
+
+
             program.Pop();
             program.Pop();
             program.Pop();
+           
+
+            Console.WriteLine("Inhalte von Queue 1 nach den Pops:");
+            foreach (var item in program.queue1)
+            {
+                Console.Write(" "+item);
+            }
+
         }
     }
 }

@@ -66,7 +66,7 @@ namespace StatePattern
         public void Handle(KaffeeMaschine context)
         {
             Console.WriteLine("Maschine wird ausgeschaltet.");
-            Environment.Exit(0);
+            Environment.Exit(0);  //Beendet in diesem Fall die gesamte App
         }
     }
 
@@ -101,7 +101,7 @@ namespace StatePattern
 
             while (true) 
             {
-                maschine.Request();
+                maschine.Request();  //Alle Zustände werden automatisch durchschritten
             }
         }
     }

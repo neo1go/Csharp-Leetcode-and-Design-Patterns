@@ -1,9 +1,9 @@
 ﻿// Diese App macht nur Sinn, wenn man keine Stack-Funktion besitzt.
 // Es wird mit zwei Queue's gearbeitet. Die Werte werde normal enqueued (z.B. queue1=[1,2,3]) aber sobald ein
-// Push erfolgen soll(dies wäre die 3), werden einfach die älteren Werte bis auf den letzten Wert enqueuet(queue2=[1,2]) in die 2te Queue und
+// Push erfolgen soll(dies wäre die 3), werden einfach die älteren Werte bis auf den letzten Wert enqueued(queue2=[1,2]) in die 2te Queue und
 // auch von der ersten Queue dequeuet womit nur noch der letzte Wert in queue1 steht.
 // die erste Queue kann ausgelesen(queue1=[3]) und gelöscht(dequeued) werden. Dann tauschen beide ihre Plätze und die
-// Werte werden  wieder in die erste Queue übertragen,nicht enqueued (eingefügt, queue1 = [1,2]).
+// Werte werden wieder in die erste Queue übertragen,nicht enqueued (eingefügt, queue1 = [1,2]).
 // Wenn jetzt nochmal gepoppt wird, wird die 1 übertragen in queue2 und die Zahl 2 gelöscht und die Zahl 1 wieder in queue1 kopiert.
 namespace StacksimulationWithQueue
 {

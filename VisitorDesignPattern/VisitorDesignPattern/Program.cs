@@ -1,28 +1,49 @@
 ﻿using System.Data;
+//Das Visitor Design Pattern ist ein Verhaltensmuster das verwendet wird, um eine Gruppe von Objekten
+//(Liquor,Necessity,Tobacco) mit neuen Operationen zu erweitern ohne die Klasse zu ändern.
+//Es ermöglicht, Logik von den Datenstrukturen zu trennen und so das System besser erweiterbar zu machen.
+//
+//Die Hauptaufgabe des Patterns besteht darin, eine neue Operation auf eine bestehende Objektstruktur anzuwenden,
+//ohne die Klassen der Objekte zu verändern. Dazu nutzt es die Trennung von Algorithmen und den Datenstrukturen,
+//auf die sie angewendet werden.
+//
+//Visitor: Ein Visitor ist ein Objekt, das verschiedene Methoden bereitstellt,
+//um spezifische Typen von Objekten in einer Objektstruktur zu besuchen.
+//
+//Die Objektstruktur enthält eine Vielzahl von Elementen, die alle eine gemeinsame
+//Schnittstelle implementieren und den Visitor akzeptieren.
+//
+//Die Operation wird also durch den Visitor definiert und nicht in den Klassen der zu besuchenden Objekte selbst.
+//
+// Der Name rührt daher, das der Bsucher die verschiedenen Elemente der Objektstruktur besucht indem er die Accept() Methode 
+//aufruft und  dann die darauf basierenden Operationen ausführt(Prozentrechnung der GetPrice()Methode auf die Objekte Liquor usw.).
 
 namespace VisitorPattern
 {
-    public interface Visitor
+    //IVisitor dient der Definition der Operationen, in diesem Fall Visit.Dies ist getrennt von der Objektstruktur.
+    public interface IVisitor
     {
         public double Visit(Liquor liquor);
         public double Visit(Necessity necessity);
         public double Visit(Tobacco tobacco);
     }
 
+    //Erlaubt der Objektstruktur, Besucher zu akzeptieren.
     public interface Visitable
     {
-        public double Accept(Visitor visitor);
+        public double Accept(IVisitor visitor);
     }
 
 
-
-    public class TaxVisitor : Visitor
+    // Konkreter Visitor, jeweils mit seiner eigenen Implementierung.
+    // Wenn der TaxVisitor auf die Objekte angewandt wird, besucht er diese und berechnet in diesem Fall die Steuern.
+    public class TaxVisitor : IVisitor
     {
         public TaxVisitor()
         {
 
         }
-        public double Visit(Liquor liquorItem)
+        public double Visit(Liquor liquorItem)//Dies ist der Besuch
         {
 
             return (liquorItem.GetPrice() * 0.18) + liquorItem.GetPrice();
@@ -41,7 +62,8 @@ namespace VisitorPattern
 
     }
 
-    public class TaxHolidayVisitor : Visitor
+    // Konkreter Visitor, jeweils mit seiner eigenen Implementierung.
+    public class TaxHolidayVisitor : IVisitor
     {
         public TaxHolidayVisitor()
         {
@@ -67,6 +89,7 @@ namespace VisitorPattern
 
     }
 
+    //Objekte
     public class Necessity : Visitable
     {
         private double price;
@@ -81,7 +104,7 @@ namespace VisitorPattern
             return price;
         }
 
-        public double Accept(Visitor visitor)
+        public double Accept(IVisitor visitor)
         {
             return visitor.Visit(this);
         }
@@ -101,7 +124,7 @@ namespace VisitorPattern
             return price;
         }
 
-        public double Accept(Visitor visitor)
+        public double Accept(IVisitor visitor)
         {
             return visitor.Visit(this);
         }
@@ -121,7 +144,7 @@ namespace VisitorPattern
             return price;
         }
 
-        public double Accept(Visitor visitor)
+        public double Accept(IVisitor visitor)
         {
             return visitor.Visit(this);
         }
@@ -133,6 +156,9 @@ namespace VisitorPattern
     {
         public static void Main()
         {
+            //Client
+            //Der Client erstellt die Objekte und koordiniert die Interaktionen zwischen Ihnen.
+            
             TaxVisitor taxCalc = new TaxVisitor();
             TaxHolidayVisitor holidayCalc = new TaxHolidayVisitor();
 
@@ -149,7 +175,7 @@ namespace VisitorPattern
             Console.WriteLine("Normal Taxes:");
 
             Console.WriteLine(Math.Round(milkPrice, 2)+" $ for milk");  //hier wird gerundet
-            Console.WriteLine(Math.Round(vodkaPrice,2)+ " $ for vodka"); //hier wird nur absgeschnitten
+            Console.WriteLine($"{(vodkaPrice):F2} $ for vodka"); //hier wird nur absgeschnitten mit 2 Stellen nach dem Komma
             Console.WriteLine(Math.Round(cigarsPrice) + " $ for cigars");
 
 

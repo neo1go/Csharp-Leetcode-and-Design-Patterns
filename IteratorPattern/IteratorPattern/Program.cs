@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 
 namespace IteratorPattern
-{   //Das Iterator Pattern wird verwendet, um eine Möglichkeit bereitzustellen,sequentiell über Elemente einer Aggregatstruktur
+{   //Das Iterator Pattern wird verwendet, um eine Möglichkeit bereitzustellen,sequentiell über Elemente einer Aggregatstruktur(Collection)
     //zu iterieren, ohne die interne Repräsentation dieser Struktur offenzulegen. Das DesignPattern ermöglicht es, verschiedene Arten
     //von Iterationen zu implementieren,unabhängig davon, wie die Sammlung intern organisiert ist.
 
@@ -56,7 +56,7 @@ namespace IteratorPattern
         {
             _collection = collection;  //Dies ist nur eine Referenz auf die echte List _items im Heap.
         }
-        public T Current  //Getter der den aktuellen Wert zurückgibt an dem der Iterator steht.
+        public T Current  //Getter, der den aktuellen Wert zurückgibt an dem der Iterator steht.
         {
             get 
             {

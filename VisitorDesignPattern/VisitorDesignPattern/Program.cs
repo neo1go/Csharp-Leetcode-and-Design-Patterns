@@ -188,13 +188,6 @@ namespace VisitorPattern
             Console.WriteLine($"{(holidayMilkPrice):F2} $ for milk");
             Console.WriteLine($"{(holidayVodkaPrice):F2} $ for vodka");
             Console.WriteLine(Math.Round(holidayCigarsPrice,2) + " $ for cigars");
-
-
         }
     }
-
-
-
-
-
 }

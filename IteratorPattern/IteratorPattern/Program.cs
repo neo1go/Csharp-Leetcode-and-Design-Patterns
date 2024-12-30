@@ -75,6 +75,7 @@ namespace IteratorPattern
 
         public void Reset() => _currentIndex = -1; //Dies muss auf -1 gesetzt werden da mit MoveNext() immer der nächste Eintrag
                                                   //überprüft wird und sonst die 0te Stelle nicht mit berücksichtigt würde.
+                                                  //Hiermit wird nur der Iterator zurückgesetzt.
 
       /*  alternative normale Schreibweise(mir eigentlich lieber)
         public void Reset()

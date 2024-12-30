@@ -11,7 +11,7 @@
 //um spezifische Typen von Objekten in einer Objektstruktur zu besuchen.
 //
 //Die Objektstruktur enthält eine Vielzahl von Elementen, die alle eine gemeinsame
-//Schnittstelle implementieren und den Visitor akzeptieren.
+//Schnittstelle implementieren und den Visitor(durch Visitable) akzeptieren.
 //
 //Die Operation wird also durch den Visitor definiert und nicht in den Klassen der zu besuchenden Objekte selbst.
 //
@@ -28,7 +28,7 @@ namespace VisitorPattern
         public double Visit(Tobacco tobacco);
     }
 
-    //Erlaubt der Objektstruktur, Besucher zu akzeptieren.
+    //Erlaubt der Objektstruktur, Besucher zu akzeptieren. Ohne Visitable sind Objekte auch nicht besuchbar.
     public interface Visitable
     {
         public double Accept(IVisitor visitor);
@@ -49,12 +49,12 @@ namespace VisitorPattern
             return (liquorItem.GetPrice() * 0.18) + liquorItem.GetPrice();
         }
 
-        public double Visit(Necessity necessityItem)
+        public double Visit(Necessity necessityItem)//Hier wird mittels Polymorphie Visitor angepasst je nach Objekt
         {
             return (necessityItem.GetPrice() * 0.0) + necessityItem.GetPrice();
         }
 
-        public virtual double Visit(Tobacco tobaccoItem)
+        public  double Visit(Tobacco tobaccoItem)
         {
             return (tobaccoItem.GetPrice() * 0.32) + tobaccoItem.GetPrice();
         }

@@ -50,7 +50,7 @@ const  weakDict = new WeakMap([  //können eher vom garbage collector überwacht
 
 
 
-//Anomyme Funktion
+//Anonyme Funktion
 const showValue ={
     value:"Hi",
     print:() =>{
@@ -60,7 +60,7 @@ const showValue ={
 showValue.print();
 
 
-//Dies ist ein normaler Aufruf,also nicht anonym. "This" bezieht sich nun auf den eigenen Objektwert (local)
+//Dies ist ein normaler Aufruf,also nicht anonym wegen print: function. "This" bezieht sich nun auf den eigenen Objektwert (local)
 const showValue2 ={
     value:"Hallo",
     print: function(){
@@ -174,6 +174,18 @@ async function asyncFun(){
    }
 
 }
+/*  alte Variante
+fetch('https://catfact.ninja/fact')
+     .then(function(){
+        console.log('Fertig!')
+     });
+*/
+async function load(){
+    let response = await fetch('https://catfact.ninja/fact');
+    let result = await response.json();
+    console.log(result.fact);
+}
+load();
 
 //mit 'export default'  wird eine Funktion definiert, die in einer anderen js Datei mittels   import Funktionsname from './help.js';    weiterverwendet werden kann. 
 

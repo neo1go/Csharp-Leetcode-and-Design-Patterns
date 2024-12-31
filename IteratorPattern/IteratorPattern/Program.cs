@@ -50,6 +50,24 @@ namespace IteratorPattern
     //Der konkrete Iterator, also quasi der "Durchschreiter" der durch die Sammlung iteriert (durchschreitet).
     public class CustomIterator<T> : IIterator<T>
     {
+        /*
+        private readonly IEnumerable<T>? _collections;
+        private IEnumerator<T>? _enumerator;
+
+        private Iterator(IEnumerable<T> collection) {  _collections = collection ?? throw new ArgumentNullException(nameof(collection));
+        _enumerator = _collections.GetEnumerator();
+        }
+        public bool MoveNext()
+        {
+            return _enumerator.MoveNext();
+        }
+        public void Reset()
+        {
+         _enumerator = _collection.GetEnumerator();
+        }
+        //Das IEnumerable bedeutet unter .net, das die Collection durchschreitbar ist 
+        //und der IEnumerator ist zentral wichtig in .net und foreach .
+        */
         private readonly List<T> _collection; 
         private int _currentIndex = -1;   //muss -1 sein wegen der MoveNext() welche sonst den 0 Index missachten würde.
         public CustomIterator(List<T> collection) //Hier wird also _items übergeben von der tatsächlichen Sammlung.

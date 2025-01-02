@@ -2,7 +2,7 @@
 {
 
     //Basierend auf dem Konstruktoraufruf in der Main-Methode wird
-    //mittels Polymorphie der Interface-Methode wayOfTravel() die passende Funktion gewählt.
+    //mittels Polymorphie der Interface-Methode transport() die passende Funktion gewählt.
 
     public interface ITransportStrategy
     {
@@ -50,7 +50,7 @@
         private ITransportStrategy? _strategy;   //Privates Feld für Komposition 
 
         public void SetStrategy(ITransportStrategy strategy)//hiermit wird die tatsächliche Strategie initialisiert obwohl
-                                                            //dies kein Konstruktor ist.
+                                                            //dies kein Konstruktor ist, sondern eine Setter-Methode.
         {
             _strategy = strategy;
         }
@@ -59,7 +59,9 @@
         {
             if (_strategy != null)
             {
-                Console.WriteLine(_strategy.transport());// hier wird dann die passende Strategie eingefügt.
+                Console.WriteLine(_strategy.transport()); // WICHTIG!!!!
+                                                          // hier wird dann die passende Strategie, polymorph
+                                                          // je nach Objekterzeugung durch seperate Klassen, eingefügt.
             }
             else
             {
@@ -78,8 +80,8 @@
 
 
             var walking = new WalkStrategy();
-            commuter.SetStrategy(walking);
-            commuter.GoToWork();
+            commuter.SetStrategy(walking);        //Setter Aufruf
+            commuter.GoToWork();                  //Je nach erstelltem Objekt wird eine Variante von GoToWork() aufgerufen.
 
 
             var driving = new CarStrategy();

@@ -27,18 +27,18 @@ namespace TextToVoice
         //Geschwindigkeiten
         private void SetVoiceRates()
         {
-            cboRate.Items.Add("Very slow");
+            cboRate.Items.Add("Very slow");   //cboRate ist eine ComboBox im WPF Teil.
             cboRate.Items.Add("Slower");
             cboRate.Items.Add("Normal");
             cboRate.Items.Add("Faster");
             cboRate.Items.Add("Very Fast");
 
-            cboRate.SelectedIndex = 2;  //Startwert der aus der Liste ausgewählt wird
+            cboRate.SelectedIndex = 2;  //Startwert, der aus der Liste ausgewählt wird als default.
         }
 
         private int GetVoiceRate()
         {
-            int voiceRate = 0;
+            int voiceRate = 0; 
             switch (this.cboRate.SelectedValue)
             {
                 case "Very slow": voiceRate = -7; break;
@@ -93,7 +93,7 @@ namespace TextToVoice
 
         private string? GetVoiceName()
         {
-            if (this.cboVoices.Items.Count == 0)
+            if (this.cboVoices.Items.Count == 0)  //cboVoices ist die ComboBox der XAML
             {
                 MessageBox.Show("You must first install some voices");
                 return null;
@@ -105,16 +105,17 @@ namespace TextToVoice
             }
             else
             {
-                string cboVoiceValue = (string)this.cboVoices.SelectedItem;
-                var buckets = cboVoiceValue.ToString().Split("-");
+                string cboVoiceValue = (string)this.cboVoices.SelectedItem; //falls ein Eintrag in der ComboBox mittels
+                                                                            //Mouseklick angewählt wurde, wird er explizit als string returned.
+                var buckets = cboVoiceValue.ToString().Split("-");          //Erstelltes Array mit Einträgen und dem Trennzeichen "-". 
 
                 if (voiceList != null)
                 {
                     for (int j = 0; j < voiceList.Count; j++)
                     {
                         var _v = voiceList[j];
-                        var v_o = _v.VoiceInfo.Name.ToString().Trim().ToLower();
-                        var v_b = buckets[0].ToString().Trim().ToLower();
+                        var v_o = _v.VoiceInfo.Name.ToString().Trim().ToLower();//Umwandlung zum String,Kleinschreibung und ohne Leerzeichen
+                        var v_b = buckets[0].ToString().Trim().ToLower(); //Anhänge auch klein
                         if (v_o == v_b)
                             return (_v.VoiceInfo.Name.ToString());
 
@@ -168,7 +169,7 @@ namespace TextToVoice
         //EventHandler - Sprachausgabe beendet
         private void Synthesizer_SpeakCompleted(object? sender, SpeakCompletedEventArgs e)
         {
-            //if (this.synthesizer != null)
+            //if (this.synthesizer != null)  Dies sollte der Verzögerung dienen da am Anfang immer etwas abgeschnitten wird.(Klappt nicht)
             //{
             //    this.synthesizer.Dispose();
             //    this.synthesizer = null;

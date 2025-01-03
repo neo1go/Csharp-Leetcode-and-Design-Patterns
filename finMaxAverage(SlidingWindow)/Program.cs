@@ -34,7 +34,7 @@
 
 
         }
-        return (double)maxSum / k;      //erst hier wird der average errechnet inde  mdie größte Summe durch die Fenstergröße k dividiert wird
+        return (double)maxSum / k;  //erst hier wird der average errechnet indem die größte Summe durch die Fenstergröße k dividiert wird.
 
     }
 

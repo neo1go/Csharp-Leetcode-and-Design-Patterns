@@ -31,7 +31,7 @@ namespace WeatherProject
 
         private async void Bt_Input_City_Click(object sender, RoutedEventArgs e)
         {
-            string city = input_city.Text;
+            string city = input_city.Text; //Textbox input_city
 
             if (string.IsNullOrEmpty(city))
             {
@@ -40,7 +40,7 @@ namespace WeatherProject
             }
             try
             {
-                //Hier wird aus der Ortsangabe eine Koordinate(lan/lon) von der Webseitendatenbank zurückgegeben
+                //Hier wird aus der Ortsangabe eine Koordinate(lan/lon) von der Webseitendatenbank zurückgegeben.
                 string geoURL = $"{geoDataURL}?q={city}&limit=5&appid={ApiKey}";
                 using (HttpClient client = new())
                 {
@@ -59,7 +59,7 @@ namespace WeatherProject
                             System.Diagnostics.Debug.WriteLine($"latitude = {lat}");
                             System.Diagnostics.Debug.WriteLine($"longitude = {lon}");
 
-                            //Zweite Abfrage mit den lat und lon Daten, die vorher umgewandelt wurden
+                            //Zweite Abfrage mit den lat und lon Daten, die vorher umgewandelt wurden.
                             string url = $"{ApiUrl}?lat={lat}&lon={lon}&appid={ApiKey}&units=metric&lang=de";
 
 
@@ -83,12 +83,12 @@ namespace WeatherProject
                         }
                         else
                         {
-                            MessageBox.Show("Fehler bei der Koordinatenextraktion. Überprüfen Sie die Geocoding-Daten");
+                            MessageBox.Show("Fehler bei der Koordinatenextraktion. Überprüfen Sie die Geocoding-Daten.");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Keine Ergebnisse gefunden. Überprüfen Sie den Stadtnamen");
+                        MessageBox.Show("Keine Ergebnisse gefunden. Überprüfen Sie den Stadtnamen.");
                     }
 
                 }

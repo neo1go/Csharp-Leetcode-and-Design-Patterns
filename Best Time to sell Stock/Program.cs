@@ -1,5 +1,5 @@
 ﻿
-//Greedy Approach bei dem der Maximal Wert ermitellt werden muß.
+//Greedy Approach bei dem der Maximal-Wert ermitellt werden muß.
 // Es wird immer i mit dem buyPrice verglichen wobei buyPrice immer um 1 weitergesetzt wird.
 //Es wird auch mit 1 angefangen beim Iterieren da 0 als erster Wert gilt und dann später erhöht wird nach einem
 //kompletten Durchlauf.

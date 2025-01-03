@@ -102,8 +102,8 @@
             }
         }
         //Die Bools sind umgekehrt
-        //Wenn die Zahl schon vorhanden ist in der Zeile, gibt es ein true zurück. Deswegen wird in isValidPlacement ein ! genutzt
-        //Überprüfen ob Wert in Zeile schon vorhanden ist
+        //Wenn die Zahl schon vorhanden ist in der Zeile, gibt es ein true zurück. Deswegen wird in isValidPlacement ein ! genutzt.
+        //Überprüfen ob Wert in Zeile schon vorhanden ist.
         private static bool isNumberInRow(int[][] board, int number, int row)
         {
             for (int i = 0; i < GRID_SIZE; i++)
@@ -158,17 +158,17 @@
                 !isNumberInBox(board, number, row, column);
         }
 
-        private static bool solveBoard(int[][] board) // hier werden rekursiv die Zahlen eingefügt, bis das Board gelöst wurde 
+        private static bool solveBoard(int[][] board) // hier werden rekursiv die Zahlen eingefügt, bis das Board gelöst ist. 
         {
-            for (int row = 0; row < GRID_SIZE; row++)
+            for (int row = 0; row < GRID_SIZE; row++)//Gridsize ist für alle Werte gleich 9, also 9 Zeilen, 9 Spalten und 9 Kästchen.
             {
                 for (int column = 0; column < GRID_SIZE; column++)
                 {
                     if (board[row][column] == 0)
                     {
-                        for (int numberToTry = 1; numberToTry <= GRID_SIZE; numberToTry++)//Dies ist die Schleife, die die Zahl einsetzt zum Testen
+                        for (int numberToTry = 1; numberToTry <= GRID_SIZE; numberToTry++)//Dies ist die Schleife, die die Zahl einsetzt zum Testen.
                         {
-                            if (isValidPlacement(board, numberToTry, row, column))//wenn Zeile,Spalte u. Box false sind, wird numberToTry eingesetzt
+                            if (isValidPlacement(board, numberToTry, row, column))//wenn Zeile,Spalte u. Box false sind, wird numberToTry eingesetzt.
                             {
                                 board[row][column] = numberToTry;
 

@@ -1,11 +1,11 @@
 ﻿// Aufgabe ist herauszufinden, mit wievielen Booten man im Idealfall übersetzen kann bei einem Maximalgewicht
-// und höchstens maximal 2 Personen pro Boot
-// Greedy Aproach  mit linkem und rechtem Pointer
-// Die Antwort beinhaltet nur die Anzahl der Boote
+// und höchstens maximal 2 Personen pro Boot.
+// Greedy Aproach  mit linkem und rechtem Pointer.
+// Die Antwort beinhaltet nur die Anzahl der Boote.
 public class Program
 {
     // Achtung - Limit darf nie kleiner sein als größte Zahl im Array, also eine Person kann immer befördert werden
-    // und darf das Max Gewicht nicht überschreiten
+    // und darf das Max-Gewicht nicht überschreiten.
     public static int numRescueBoats(int[] people, int limit)
     {
         Array.Sort(people);        //muss sortiert werden, damit man mit den Pointern arbeiten kann
@@ -59,7 +59,7 @@ public class Program
             
             
 
-            boats++; //es wird dann immer ein Boot hinzugefügt solange die Pointer sich noch nicht getroffen haben
+            boats++; //es wird dann immer ein Boot hinzugefügt solange die Pointer sich noch nicht getroffen haben.
 
           
             Console.WriteLine($"Gewicht von Boot {boats} ist {weight} kg");
@@ -71,13 +71,13 @@ public class Program
     
     public static void Main(string[] args)
     {
-        int[] people = { 60, 57, 51, 89, 92 };   //Einträge müssen jeweils unter Limit bleiben
+        int[] people = { 60, 57, 51, 89, 92 };   //Einträge müssen jeweils unter Limit bleiben.
         //int[] people = { 119, 119, 119, 12, 14, 119 };
         int limit = 120;
 
         int solution = numRescueBoats(people, limit);
 
-        Console.WriteLine($"Es werden {solution} Boote benötigt bei einem Gewichtslimit von {limit} kg pro Boot");
+        Console.WriteLine($"Es werden {solution} Boote benötigt bei einem Gewichtslimit von {limit} kg pro Boot.");
     }
 
 }

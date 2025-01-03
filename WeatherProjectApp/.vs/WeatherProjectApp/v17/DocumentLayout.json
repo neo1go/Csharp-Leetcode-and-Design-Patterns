@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|solutionrelative:weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\weatherproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|solutionrelative:weatherproject\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B740D83A-1BB3-4150-B6E0-3E749428645D}|WeatherProject\\WeatherProject.csproj|solutionrelative:weatherproject\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E5A59BD-0177-490B-9568-85D874D68A3E}|NUnitTestsWeatherApp\\NUnitTestsWeatherApp.csproj|c:\\users\\willkommen\\source\\repos\\welcometothejungle\\weatherprojectapp\\nunittestsweatherapp\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WeatherProject\\MainWindow.xaml",
@@ -66,13 +66,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WeatherProject\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Willkommen\\source\\repos\\welcometothejungle\\WeatherProjectApp\\WeatherProject\\MainWindow.xaml.cs",
               "RelativeToolTip": "WeatherProject\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T06:21:49.091Z",
               "EditorCaption": ""

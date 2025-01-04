@@ -1,0 +1,6 @@
+.header{
+    display: flex; /*aktiviert die Flexbox*/
+    justify-content:center;/*Der Inhalt wird gleichmäßig verteilt*/
+    align-items: center; /*hiermit wird von der Mitte ausgehend verteilt*/
+    background-color: rgba(221, 227, 230);
+}

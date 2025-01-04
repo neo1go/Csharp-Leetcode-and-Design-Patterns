@@ -25,7 +25,7 @@
     flex: auto;
 }
 
-.header {
+.welcome {
     text-align: center; /* Überschrift zentriert */
     padding: 20px; /* Optional für etwas Innenabstand */
 }
@@ -37,20 +37,20 @@
 }
 
 .left-side {
-    background-color: aqua;
+    background-color: rgb(0, 34, 255);
     padding: 10px; /* Optional für etwas Innenabstand */
     flex: 1; /* Nimmt den verfügbaren Platz ein */
 }
 
 .divider {
     background-color: blueviolet;
-    width: 1px; /* Setze die Breite des Trenners */
+    width: 5px; /* Setze die Breite des Trenners */
     height: auto; /* Höhe des Trenners wird an die Höhe des Inhalts angepasst */
     margin: 0 20px; /* Abstand zum linken und rechten Element */
 }
 
 .right-side {
-    background-color: aqua;
+    background-color: rgb(0, 34, 255);
     padding: 10px; /* Optional für etwas Innenabstand */
     flex: 1; /* Nimmt den verfügbaren Platz ein */
 }

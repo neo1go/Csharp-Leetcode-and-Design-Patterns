@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Beispiel</title>
-   
+   <!-- hier kommen normalerweise die <link rel="stylesheet" href="style.css" hin. Jetzt steuert app.component.ts dieses Routing-->
 </head>
 <body>
+    <app-header></app-header>
   <main class="main">
+    
       <div class="content">
-          <div class="header">
-              <h1>Willkommen zu meinem Projekt!</h1>
-          </div>
+        
+        <div class="welcome">
+            <h1>Willkommen zu meinem Projekt!</h1>
+            <p>Dies ist der Welcome Bereich meiner Seite</p>
+        </div>
           <div class="body">
               <div class="left-side">
                   <p>Hier ist die linke Seite</p>
@@ -24,7 +28,9 @@
           <div class="button-container">
               <button class="button">Klicken Sie hier</button>
           </div>
+         
       </div>
+      <app-footer></app-footer>
   </main>
 </body>
 </html>

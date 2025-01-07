@@ -7,7 +7,7 @@
    <!-- hier kommen normalerweise die <link rel="stylesheet" href="style.css" hin. Jetzt steuert app.component.ts dieses Routing-->
 </head>
 <body>
-    <app-header></app-header>
+    <app-header></app-header>   <!-- Dies ist der Punkt wo die Komponente eingefügt wird-->
   <main class="main">
     
       <div class="content">
@@ -18,17 +18,22 @@
         </div>
           <div class="body">
               <div class="left-side">
-                  <p>Hier ist die linke Seite</p>
+                  <p>Hier ist die linke Seite zentriert mit text-align.</p>
               </div>
               <div class="divider"></div>
               <div class="right-side">
                   <p>Hier ist die rechte Seite</p>
               </div>
           </div>
+          <div class="parent">
+            <p class="child">Dies ist ein Kind-Element</p>
+            <div class="child">
+                <span class="child">Dies ist ein weiteres Kind, das tief verschachtelt ist.</span>
+            </div>
+        </div>
           <div class="button-container">
               <button class="button">Klicken Sie hier</button>
-          </div>
-         
+          </div>        
       </div>
       <app-footer></app-footer>
   </main>

@@ -57,9 +57,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+         
           "configurations": {
             "production": {
               "buildTarget": "neues-angular-projekt:build:production"
+              
             },
             "development": {
               "buildTarget": "neues-angular-projekt:build:development"

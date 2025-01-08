@@ -18,6 +18,16 @@
     justify-content: center; /* Zentrieren in der Mitte */
 }
 
+a{                 /*a gilt als Standard für links*/
+    color:white;
+}
+a:hover{     
+    
+    color:aqua;
+    text-decoration:none;
+}
+
+
 .content {
     background-color: black;
     color: aliceblue;
@@ -69,6 +79,8 @@
  /*   padding: 20px; /* Optional für etwas Innenabstand */
     /* Höhe für die Button-Position anpassen */
     margin-top: 15%;
+    
+    text-align: center;
 }
 
 .button {
@@ -78,4 +90,20 @@
     border: none; /* Keine Rahmen */
     border-radius: 5px; /* Abgerundete Ecken */
     cursor: pointer; /* Zeiger-Cursor */
+}
+
+.para{
+   
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+.inv-container{
+    text-align: center;
 }

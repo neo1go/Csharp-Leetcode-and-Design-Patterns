@@ -22,7 +22,9 @@
               </div>
               <div class="divider"></div>
               <div class="right-side">
-                  <p>Hier ist die rechte Seite</p>
+                  <p>Hier ist die rechte Seite</p> <!--ein Paragraph ist ein Absatz der zusammenhängt. Innerhalb kann man 
+                                                    inline Elemente wie a(anker für links) oder b(bold,fett) oder i(kursiv) nutzen. -->
+                  <p><a href="https://facebook.com" target="_blank">Facebook</a></p> <!--p = paragraph a=anker href=HypertextReference-->
               </div>
           </div>
           <div class="parent">
@@ -32,8 +34,16 @@
             </div>
         </div>
           <div class="button-container">
-              <button class="button">Klicken Sie hier</button>
+              <button class="button" (click)="showVariable('Dies ist die neue Variable')">Klicken Sie hier</button>                       
           </div>        
+          <div class="para">  {{variable1}}   </div> 
+          <div  class="button-container">
+            <button class="button" (click)="toggleVisibility()">Zeige/Verstecke den Text</button>
+            </div>
+
+            <div *ngIf="isVisible" class="inv-container">
+              Verstecker Text !!!!        
+          </div>
       </div>
       <app-footer></app-footer>
   </main>

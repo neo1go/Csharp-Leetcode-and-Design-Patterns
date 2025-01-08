@@ -4,3 +4,10 @@
     align-items: center; /*hiermit wird von der Mitte ausgehend verteilt*/
     background-color: rgba(221, 227, 230);
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+}

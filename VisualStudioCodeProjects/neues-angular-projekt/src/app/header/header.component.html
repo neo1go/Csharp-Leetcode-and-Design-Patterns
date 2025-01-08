@@ -7,3 +7,16 @@
         </ul>
     </nav>
 </header>
+
+
+<div class="container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <input type='text' 
+    placeholder='Neuen Titel eingeben'
+    #inputTitle (keydown.enter)="changeTitle(inputTitle.value); inputTitle.value=''" />
+
+    <button (click)="changeTitle(inputTitle.value); inputTitle.value=''">Titel ändern</button>
+    </div>
+
+

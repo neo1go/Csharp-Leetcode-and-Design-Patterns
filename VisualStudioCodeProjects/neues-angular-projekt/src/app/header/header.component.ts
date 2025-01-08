@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  title = 'neues-angular-projekt';
+description: string ='Dies ist eine einfache Angular-Komponente'
 
+changeTitle(newTitle:string){
+  this.title=newTitle;
+}
 }

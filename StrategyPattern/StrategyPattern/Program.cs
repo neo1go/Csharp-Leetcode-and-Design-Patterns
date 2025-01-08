@@ -10,7 +10,7 @@
 
     }
 
-    public class WalkStrategy : ITransportStrategy
+    public class WalkStrategy : ITransportStrategy //Dies sind Klassen, die polymorph die Methode zurückgeben
     {
         public string transport()
         {
@@ -19,7 +19,7 @@
         }
     }
 
-    public class CarStrategy : ITransportStrategy
+    public class CarStrategy : ITransportStrategy //Dies sind Klassen, die polymorph die Methode zurückgeben
     {
         public string transport()
         {
@@ -28,7 +28,7 @@
         }
     }
 
-    public class BusStrategy : ITransportStrategy
+    public class BusStrategy : ITransportStrategy //Dies sind Klassen, die polymorph die Methode zurückgeben
     {
         public string transport()
         {
@@ -37,7 +37,7 @@
         }
     }
 
-    public class BikeStrategy : ITransportStrategy
+    public class BikeStrategy : ITransportStrategy //Dies sind Klassen, die polymorph die Methode zurückgeben
     {
         public string transport()
         {
@@ -47,7 +47,8 @@
     }
     public class BetterCommuter()
     {
-        private ITransportStrategy? _strategy;   //Privates Feld für Komposition 
+        private ITransportStrategy? _strategy;   //Privates Feld für Komposition, also die DP
+        // Das Interface wird nicht vererbt sondern es wird eine Variable über eine Setter Methode bereitgestellt
 
         public void SetStrategy(ITransportStrategy strategy)//hiermit wird die tatsächliche Strategie initialisiert obwohl
                                                             //dies kein Konstruktor ist, sondern eine Setter-Methode.
@@ -80,6 +81,7 @@
 
 
             var walking = new WalkStrategy();
+            commuter.GoToWork();  //hier ist der Setter noch nicht ausgeführt worden
             commuter.SetStrategy(walking);        //Setter Aufruf
             commuter.GoToWork();                  //Je nach erstelltem Objekt wird eine Variante von GoToWork() aufgerufen.
 
@@ -92,7 +94,6 @@
             var busComute = new BusStrategy();
             commuter.SetStrategy(busComute);
             commuter.GoToWork();
-
         }
     }
 }

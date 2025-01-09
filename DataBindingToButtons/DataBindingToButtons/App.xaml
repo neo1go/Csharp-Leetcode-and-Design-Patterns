@@ -1,0 +1,9 @@
+﻿<Application x:Class="DataBindingToButtons.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DataBindingToButtons"
+             StartupUri="View/MainWindow.xaml">  <!-- hier muss der Pfad entsprechend der StartView angepasst werden-->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

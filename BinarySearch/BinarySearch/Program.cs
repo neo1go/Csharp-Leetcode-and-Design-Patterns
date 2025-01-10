@@ -1,12 +1,6 @@
 ﻿namespace BinarySearch
 {
 
-
-
-
-
-
-
     public class Program
     {
         public static bool returnTrueIfValueIsinArray(int[] values, int target)
@@ -15,27 +9,28 @@
             int rechterPtr = values.Length - 1;
             while (linkerPtr <= rechterPtr)
             {
-                int middle = (linkerPtr + rechterPtr) / 2; //Halbierung des jedesmal neu erstellten Arrays bei jedem Durchlauf,
-                                                           //so dass immer wieder halbiert wird. Die Variable muß innerhalb
-                                                           //des while Loop sein um jedesmal die neue Halbierung zu berechnen
+                //Berechnung des mittleren Index
+                int middle = (linkerPtr + rechterPtr) / 2; 
 
-                if (target > values[middle])     //Zielwert größer als der Mittelwert,wäre er gleich, würde direkt true returned werden
+                //Prüfen,ob Zielwert im rechten Bereich liegt
+                if (target > values[middle])    
                 {
 
-                    linkerPtr = middle + 1;  //Pointer wird eins größer als middle
+                    linkerPtr = middle + 1;  
 
                 }
-                else if (target < values[middle]) //Zielwert kleiner als der Mittelwert,wäre er gleich,würde direkt true returned werden
+                //Prüfen,ob Zielwert im linken Bereich liegt
+                else if (target < values[middle])
                 {
-                    rechterPtr = middle - 1;//Pointer wird eins kleiner als middle
+                    rechterPtr = middle - 1;
 
                 }
+                //Zielwert gefunden
                 else
                 {
                     return true;
                 }
             }
-            Console.WriteLine("Wert nicht in Array vorhanden!!");
             return false;
         }
 
@@ -45,7 +40,7 @@
         public static void Main(string[] args)
         {
             int[] myValues = { 1, 3, 5, 6, 7, 8, 9, 11 }; //muss sortiert sein, WICHTIG
-            int target = 2;
+            int target = 3;
 
             Console.WriteLine("Die Zahl ist im Array vorhanden: " + returnTrueIfValueIsinArray(myValues, target));
         }

@@ -40,7 +40,7 @@ namespace DataBindingToButtons.ViewModel
 
         private bool CanMovePrevious(object obj)
         {
-            return View.CurrentPosition >0 ;
+            return View.CurrentPosition >0 ; //also auf 1 ist der Button noch aktiv
         }
 
         private void MoveNext(object obj)

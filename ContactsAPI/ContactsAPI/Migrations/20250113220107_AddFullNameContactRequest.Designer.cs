@@ -4,6 +4,7 @@ using ContactsAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContactsAPI.Migrations
 {
     [DbContext(typeof(ContactsAPIDbContext))]
-    partial class ContactsAPIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250113220107_AddFullNameContactRequest")]
+    partial class AddFullNameContactRequest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

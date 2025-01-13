@@ -3,6 +3,12 @@ using ContactsAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+//Hierbei handelt es sich um eine Anwendung zur Datenbankverwaltung.
+//Das Framework ist ASP.NET.Core, also eine Desktopanwendung für MS Rechner mit
+//Entity Framework Core als Datenbank-ORM zur Datenverwaltung.
+//Durch ORM (object relational mapping) wird ind diesem Fall code-first eine Datenbank erstellt und die C#-Objekte werden
+//in Datenbanktabellen umgewandelt.
+
 namespace ContactsAPI.Controllers
 {
     [ApiController]
@@ -17,10 +23,10 @@ namespace ContactsAPI.Controllers
         }
 
         [HttpGet]//wird in URL ausgeführt, Rückgabetyp ist ein Objekt com Typ IActionResult 
-                 //IActionResult stellt nur einen Task bereit um alle HTTP Requests zu behandeln
+                 //IActionResult stellt nur einen Task bereit um alle HTTP-Requests zu behandeln.
         public async Task<IActionResult> GetAllContacts()            //Methode
         {
-                                    //Contacts ist die Property, die bei DBSet Queries einleiten kann
+                                    //Contacts ist die Property, die bei DBSet dann Queries einleiten kann.
             return Ok(await dbContext.Contacts.ToListAsync());  //Hier wird DBSet ausgelöst von der Property Contacts
         }
 

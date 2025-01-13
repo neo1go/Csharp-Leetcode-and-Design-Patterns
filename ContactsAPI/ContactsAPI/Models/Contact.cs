@@ -1,8 +1,11 @@
-﻿namespace ContactsAPI.Models
+﻿
+
+namespace ContactsAPI.Models
 {
 
     //Klassenstruktur der anzulegenden Daten. Diese werden durchs ORM
     //dann in eine Database umgewandelt.
+    
     public class Contact
     {
         public Guid Id { get; set; }

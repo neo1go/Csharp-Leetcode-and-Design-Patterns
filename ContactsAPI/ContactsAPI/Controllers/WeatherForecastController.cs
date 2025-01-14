@@ -1,5 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
+// Dies ist die presentation Layer
+// Hier werden die eingehenden HTTP-Anfragen verarbeitet und entsprechende Antworten gesendet
+// Es wird mit DBContext kommuniziert um die Daten zu laden oder zu speichern (GET,POST,PUT,DELETE).
+// Hier werden Geschäftslogik sowie API-Endpunkte implementiert.
+
 namespace ContactsAPI.Controllers
 {
     [ApiController]

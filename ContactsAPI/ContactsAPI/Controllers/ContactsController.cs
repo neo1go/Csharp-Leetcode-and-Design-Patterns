@@ -3,11 +3,17 @@ using ContactsAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-//Hierbei handelt es sich um eine Anwendung zur Datenbankverwaltung.
-//Das Framework ist ASP.NET.Core, also eine Desktopanwendung für MS Rechner mit
-//Entity Framework Core als Datenbank-ORM zur Datenverwaltung.
-//Durch ORM (object relational mapping) wird ind diesem Fall code-first eine Datenbank erstellt und die C#-Objekte werden
-//in Datenbanktabellen umgewandelt.
+// Dies ist die PresentationLayer PL mit integriertem BuisnessLogicLayer BLL und dem DataAccesLayer DAL.
+// (Sonderfall: bei größeren Anwendungen wird dies alles getrennt.)
+// PL - Nimmt HTTP-Anfragen entgegen und gibt HTTP-Antworten zurück -> ContactsController
+// BLL - Geschäftslogik -> AddContact, UpdateContact , gehört normalerweise in eine Service-Klasse.
+// DAL - dbContext.Contacts.ToListAsync() wird normalerweise in eine repository Klasse ausgelagert.
+
+
+// Hier werden die eingehenden HTTP-Anfragen verarbeitet und entsprechende Antworten gesendet
+// Es wird mit DBContext kommuniziert um die Daten zu laden oder zu speichern (GET,POST,PUT,DELETE).
+// Hier werden Geschäftslogik sowie API-Endpunkte implementiert.
+
 
 namespace ContactsAPI.Controllers
 {

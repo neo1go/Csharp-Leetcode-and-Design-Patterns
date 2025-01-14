@@ -1,7 +1,14 @@
 using ContactsAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
-//Mittels dieses Codes in der EF Core CLI wird der CodeFirst Ansatz ausgeführt
+//Hierbei handelt es sich um eine Anwendung zur Datenbankverwaltung.
+//Das Framework ist ASP.NET.Core, also eine Desktopanwendung für MS Rechner mit
+//Entity Framework Core als Datenbank-ORM zur Datenverwaltung.
+//Durch ORM (object relational mapping) wird ind diesem Fall code-first eine Datenbank erstellt und die C#-Objekte werden
+//in Datenbanktabellen umgewandelt.
+
+
+//Mittels dieses Codes in der EF Core CLI wird der CodeFirst-Ansatz ausgeführt
 //dotnet ef migrations add InitialCreate
 
 //Hiermit wird die bestehende DB geupated:

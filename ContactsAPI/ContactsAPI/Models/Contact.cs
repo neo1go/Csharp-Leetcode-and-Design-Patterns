@@ -1,4 +1,8 @@
 ﻿
+// Dies ist das DAL (data access Layer) oder die Domain-Schicht, je nach Zweck
+// Es gibt eine klare Trennung zwischen Domain Models, Entity Models und DTO's.
+// In diesem Fall handelt es sich um ein Entity-Model weil hier die Tabellenstruktur der DB 
+// definiert wird.
 
 namespace ContactsAPI.Models
 {

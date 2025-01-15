@@ -21,15 +21,15 @@ namespace ContactsAPI.Controllers
     [Route("api/[controller]")]            //andere Variante anstatt ("api/contacts")
     public class ContactsController : Controller
     {
-        private readonly ContactsAPIDbContext dbContext;
+        private readonly ContactsAPIDbContext dbContext;   // DI 
 
-        public ContactsController(ContactsAPIDbContext dbContext)  //DI von ContactsAPIDbContext into ContactsController
+        public ContactsController(ContactsAPIDbContext dbContext)  //Übergabe von ContactsAPIDbContext into ContactsController
         {
             this.dbContext = dbContext;
         }
 
         [HttpGet]//wird in URL ausgeführt, Rückgabetyp ist ein Objekt com Typ IActionResult 
-                 //IActionResult stellt nur einen Task bereit um alle HTTP-Requests zu behandeln.
+                 //IActionResult stellt nur einen Task bereit, um alle HTTP-Requests zu behandeln.
         public async Task<IActionResult> GetAllContacts()            //Methode
         {
                                     //Contacts ist die Property, die bei DBSet dann Queries einleiten kann.

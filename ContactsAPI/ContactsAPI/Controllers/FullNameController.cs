@@ -17,7 +17,7 @@ namespace ContactsAPI.Controllers
     {
         private readonly ContactsAPIDbContext dbContext;
 
-        public FullNameController(ContactsAPIDbContext dbContext)
+        public FullNameController(ContactsAPIDbContext dbContext)  //Dies ist DI von DBContext
         {
             this.dbContext = dbContext;
         }

@@ -1,19 +1,19 @@
 ﻿//Hier wird der BinaryTree manuell erstellt in Program  
 
-namespace BinaryTreeIterator
+namespace BinaryTreeIterators
 {
     //Diese Klasse definiert die Knotenpunkte 
     public class TreeNode<T>
     {
-        public T Value { get; set; }  //T gilt als generisch.,es kann also jeder Datentyp sein
+        public T Value { get;  }  //T gilt als generisch.,es kann also jeder Datentyp sein
         public TreeNode<T>? Left { get; set; }
         public TreeNode<T>? Right { get; set; }
 
         public TreeNode(T value)
         {
             Value = value;
-            Left = null;
-            Right = null;
+            Left = null;  //Startwerte 
+            Right = null; //Startwerte 
         }
     }
 
@@ -24,7 +24,6 @@ namespace BinaryTreeIterator
         public BinaryTree(T rootValue)
         {
             Root = new TreeNode<T>(rootValue);
-
         }
 
         public void DepthFirstSearch() //Nutzt die Funktionalität des Program-Call-Stacks mit LIFO
@@ -34,7 +33,7 @@ namespace BinaryTreeIterator
         }
 
         //Diese Suche geht zuerst bis zum tiefsten linken Knoten oder Blatt
-        private void DFSRecursive(TreeNode<T>? node)
+        private static void DFSRecursive(TreeNode<T>? node)
         {
             if (node == null) return;
             Console.WriteLine(node.Value); //Pre-Order Traversal
@@ -54,7 +53,9 @@ namespace BinaryTreeIterator
             //wird. So wird automatisch immer der nächste Knoten besucht,der herausgeworfen werden soll. (FIFO).
             //Es wird also horizontal iteriert.
             Queue<TreeNode<T>> queue = new Queue<TreeNode<T>>();
+
             queue.Enqueue(Root);
+
             //Solange noch Knoten vorhanden sind
             while (queue.Count > 0)
             {
@@ -75,7 +76,7 @@ namespace BinaryTreeIterator
 
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             //Baum erstellen
             BinaryTree<int> binaryTree = new BinaryTree<int>(1);  //hier muß anstatt T der tatsächliche Datentyp stehen.

@@ -1,12 +1,12 @@
-﻿//Das State Pattern ist ein behavioral Pattern und wird genutzt,
-//um das Verhalten eines Objektes basierend auf seinem internen Zustand (State)
-//zu ändern. Zustände werden in eigene Klassen gekaspelt und an sie delegiert
-//anstatt sie mit vielen if-else oder switch Blöcken zu implementieren.
-//   Komponenten sind :
-//   Context: Die Hauptklasse die das aktuelle Verhalten repräsentiert.
-//   State: Definiert das gemeinsame Verhalten,das von den konkreten Zuständen implementiert wird.
-//   Concrete State: Die konkrete Implementierung des Zustands, die das Verhalten für den jeweiligen Zustand bereitstellen.
+﻿// Das State Pattern ist ein behavioral Pattern und wird genutzt,
+// um das Verhalten eines Objektes basierend auf seinem internen Zustand (State)
+// zu ändern. Zustände werden in eigene Klassen gekaspelt und an sie delegiert
+// anstatt sie mit vielen if-else oder switch Blöcken zu implementieren.
 
+//   Komponenten sind :
+//   State (interface): Definiert das gemeinsame Verhalten,das von den konkreten Zuständen implementiert wird.
+//   Concrete State: Die konkrete Implementierung des Zustands, die das Verhalten für den jeweiligen Zustand bereitstellen.
+//   Context: Die Hauptklasse die das aktuelle Verhalten repräsentiert.
 
 namespace StatePattern
 {
@@ -19,7 +19,7 @@ namespace StatePattern
     //2. Concrete States
     public class BereitState : IKaffeeMaschineState
     {
-        public void Handle(KaffeeMaschine context)
+        public void Handle(KaffeeMaschine context) //Hier wird die state Methode entsprechend dem Verhalten angepasst
         {
             Console.WriteLine("Maschine ist bereit. Bitte wählen Sie eine Aktion: 'starten', 'wartung' oder 'ausschalten'");
             var input = Console.ReadLine();
@@ -70,7 +70,7 @@ namespace StatePattern
         }
     }
 
-    //3. Context Class
+    //3. Context Class - repräsentiert das aktuelle Verhalten des Objektes 
     public class KaffeeMaschine
     {
         private IKaffeeMaschineState _currentState;
@@ -88,14 +88,14 @@ namespace StatePattern
 
         public void Request()
         {
-            _currentState.Handle(this);
+            _currentState.Handle(this); //hier wird das polymorphe Handle() übergeben.
         }
     }
 
     // 4. Nutzung
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             KaffeeMaschine maschine = new KaffeeMaschine();
 

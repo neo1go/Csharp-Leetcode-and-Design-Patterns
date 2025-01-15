@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ContactsAPI.Data
 {
-    public class ContactsAPIDbContext : DbContext
+    public class ContactsAPIDbContext : DbContext  //Diese Klasse wird überall injected
     {
         public ContactsAPIDbContext(DbContextOptions options) : base(options)  //default Konstruktor mit DI der options
         {
@@ -16,12 +16,12 @@ namespace ContactsAPI.Data
         }
 
         //Property(Eigenschaft) und kein Konstruktor, der die Struktur von
-        //der Klasse Contact als DatenbankSet verwaltet
+        //der Klasse Contact als DatenbankSet verwaltet.
         public DbSet<Contact> Contacts  { get; set; }   //Hier wird EF Core angewiesen, eine Tabelle namens Contacts zu erstellen,
                                                         //basierend auf der Klasse Contacts.
 
 
-        //Hier wird die Property mittels di bereitgestellt.
+        //Hier wird die Property bereitgestellt.
         public DbSet<FullNameContactRequest> FullNameContactRequests { get; set; }
 
 

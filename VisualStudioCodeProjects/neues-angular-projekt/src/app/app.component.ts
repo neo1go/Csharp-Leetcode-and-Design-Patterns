@@ -21,6 +21,5 @@ isVisible: boolean =false;
 
  toggleVisibility(){
  this.isVisible = !this.isVisible;  //Toggle mit 2 Zuständen
-
  }
 }

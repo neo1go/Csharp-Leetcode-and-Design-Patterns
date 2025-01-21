@@ -5,11 +5,17 @@
    // Die Max-Heap und Min-Heap Funktionen dienen dem Herausfinden entweder des Maximalwert oder
    // Minimalwerts der dann als Root gilt.
    
-   // ACHTUNG: Der unterste rechte Elternknoten in einem Array ist IMMER:  (LängeArray/2) -1 (bei 0 Index)
+   // ACHTUNG: Der unterste Elternknoten in einem Array ist IMMER:  (LängeArray n/2) -1 (bei 0 Index)
    // Der Baum wird dann immer von diesem Elternknoten bis zur Root rückwärts (bildlich nach oben) iteriert.
-   // Der Unterschied zwischen dem min und max Prinzip ist somit nur der Austausch der Werte
+   // Der Unterschied zwischen dem min und max Prinzip ist somit nur der Austausch der + - Zeichen.
 
+    // Die Kindknoten eines Elternknotens werden in einem 0-basierten Array immer mit 
+    //   linker Kindknoten:  2*i +1
+    //   rechter Kindknoten: 2*i +2
 
+    // Um von einem Kindknoten in einem 0-basierten Array den Elternknoten zu ermitteln,
+    // wird der index-1 dann halbiert und anschließend abgerundet(floor),
+    // also Math.floor((i-1)/2) ergibt den Elternknoten eines Kindknotens.
     public class Program
     {
         public static int[] MaxHeap(int[] heap)
@@ -38,23 +44,23 @@
         // HeapifyDown für MaxHeap
         public static void HeapifyDownMax(int[] heap, int heapLength, int rootIndex)
         {
-            int largest = rootIndex;    //Dieser Wert ist mathematisch somit immer der letzte rechte Elternknoten ((n/2)-1)
+            int largest = rootIndex;    //Dieser Wert ist wegen der rekursiven Natur der aktuell besuchte Knoten. 
             int leftChild = 2 * rootIndex + 1;//Um im Array die richtige Position des childs zu ermitteln in Bezug auf den Elternknoten,
                                               //muß der rootIndex mal zwei genommen werden.
             int rightChild = 2 * rootIndex + 2;
 
-            if (leftChild < heapLength && heap[leftChild] > heap[largest])
+            if (leftChild < heapLength && heap[leftChild] > heap[largest])//der Vergleich mit heapLength verhindert outOfBounds
             {
                 largest = leftChild;
             }
 
             if (rightChild < heapLength && heap[rightChild] > heap[largest])
             {
-                largest = rightChild;
+                largest = rightChild; 
             }
-
-            if (largest != rootIndex)
-            {
+              
+            if (largest != rootIndex)//nachdem beide Kindknoten verglichen wurden, wird an der i Stelle der größte Wert eingesetzt
+            {                        //falls dies nicht schon der größte Wert ist.
                 int temp = heap[rootIndex];
                 heap[rootIndex] = heap[largest];
                 heap[largest] = temp;

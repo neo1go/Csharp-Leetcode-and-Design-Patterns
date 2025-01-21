@@ -24,12 +24,13 @@
             {
 
 
-                for (int j = 0; j < nums.Length - 1 - i; j++) //hier wird -i genutzt weil bei jedem Durchlauf der Array um 1 kürzer wird
-                                                              //da ja der größte Wert nach hinten gespült wird und nicht mehr sortiert werden muß
+                for (int j = 0; j < nums.Length - 1 - i; j++) //Hier wird -i genutzt weil bei jedem Durchlauf der Array um 1 kürzer
+                                                              //wird da ja der größte Wert nach hinten gespült wird
+                                                              //und nicht mehr sortiert werden muß.
                 {
                     if (nums[j] > nums[j + 1])
                     {   
-                        //Bei BubbleSort werden die benachbarten Werte solange vertauscht bis der Wert ganz hinten steht
+                        //Bei BubbleSort werden die benachbarten Werte solange vertauscht bis der Wert ganz hinten steht.
                         temp = nums[j]; 
                         nums[j] = nums[j + 1];
                         nums[j + 1] = temp;

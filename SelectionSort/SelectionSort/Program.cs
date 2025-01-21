@@ -9,7 +9,7 @@ namespace SelectionSort
     public class Program()
     {
 
-        public static int[] SelectionSort(int[] nums)
+        public static int[]? SelectionSort(int[] nums)
         {
             bool swapped = false;
             int temp;
@@ -26,9 +26,9 @@ namespace SelectionSort
                
                 for (int j = i+1; j < nums.Length; j++)//j muss immer i+1 sein 
                 {
-                    if (nums[i] > nums[j])  // dies ist SelectionSort, da dies für jedes Element im Array wiederholt wird wegen i und j
-                    {                       // anstatt nur j und j+1 zu vergleichen wie bei BubbleSort
-                        temp = nums[i];     // Bei SelectionSort werden die Werte bei den Pointerstellen bei Bedarf vertauscht
+                    if (nums[i] > nums[j])// dies ist SelectionSort, da dies für jedes Element im Array wiederholt wird wegen i und j
+                    {                     // anstatt nur j und j+1 zu vergleichen wie bei BubbleSort
+                        temp = nums[i];   // Bei SelectionSort werden die Werte bei den Pointerstellen bei Bedarf vertauscht.
                         nums[i] = nums[j];
                         nums[j] = temp;
 
@@ -47,9 +47,9 @@ namespace SelectionSort
         }
 
 
-        public static void printArray(int[] sortedArray)
+        public static void PrintArray(int[] sortedArray)
         {
-            if (sortedArray.Count() > 1)
+            if (sortedArray.Length > 1)
             {
                 foreach (int i in sortedArray)
                 {
@@ -60,14 +60,14 @@ namespace SelectionSort
 
 
 
-        public static void Main(string[] args)
+        public static void Main()
         {
-            //int[] nums = { 34, 2, 56, 7, 8, 3, 2, 4 };
+            int[] nums = [ 34, 2, 56, 7, 8, 3, 2, 4 ];
             // int[] nums = {};
-            int[] nums = {1,2,3,4 };
-            int[] sortedArray = SelectionSort(nums);
+            //int[] nums = [1,2,3,4 ];
+            int[]? sortedArray = SelectionSort(nums);
 
-            printArray(sortedArray);
+            PrintArray(sortedArray);   
         }
 
 

@@ -18,9 +18,9 @@ namespace AreAlmostEqual
                     if (s1[i] != s2[i]) //wenn ein Unterschied vorhanden ist,dann...
                     {
                         // Wenn es mehr als zwei Unterschiede gibt, können wir sofort false zurückgeben
-                        if (diffCount >= 2) return false;//Bei genau 2 tauschbaren Werten und dem Ende der Schleife wird nie false ausgegeben.
-                        diffIndices[diffCount] = i;
-                        diffCount++;
+                        if (diffCount >= 2) return false;//Bei genau 2 tauschbaren Buchstaben wird diffCount zwar auf 2 gesetzt,aber nie geprüft
+                        diffIndices[diffCount] = i;      //weil die äußere Bedingung nicht nochmal true ist.
+                        diffCount++;//bei genau 2 tauschbaren chars wird der Zähler zwar auf 2 gesetzt, aber nie geprüft.
                     }
                 }
                 // Wenn es keine Unterschiede gibt, sind die Zeichenketten bereits gleich.
@@ -36,8 +36,8 @@ namespace AreAlmostEqual
 
         public static void Main(String[] args)
         {
-            string s1 = "bank";
-            string s2 = "kanb";
+            string s1 = "battle";
+            string s2 = "lattbe";
 
             bool result = AreAlmostEqual(s1, s2);
 

@@ -88,7 +88,7 @@ namespace CommandPattern
     {
         public static void Main(string[] args)
         {
-            //Empfänger-Objekt (Receiver) Das Light-Objekt,das die Aktionen druchführt.
+            //Empfänger-Objekt (Receiver) Das Light-Objekt,das die Aktionen durchführt.
             Light livingRoomLight = new Light();
 
             //Befehle (Commands)

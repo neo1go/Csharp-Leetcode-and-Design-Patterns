@@ -35,25 +35,25 @@ namespace CountBadPairs
 
             for (int i = 0; i < pairs.Count; i++)
             {
-                totalPairs += i;  //0+1+2+3 etc  ergibt die Nummer aller Kombinationen von Paaren
+                totalPairs += i;  //0+1+2+3 etc  dies ergibt die Nummer aller Kombinationen von Paaren
 
                 int key = pairs[i] - i;       //Der Key der verschiedenen Key-Value Paare ist tatsächlich pairs[i]-i
 
-                Console.WriteLine($"i={i}, pairs[i]={pairs[i]}, key={key}");
+                Console.Write($"i={i}, Arraywert = {pairs[i]}, key={key}, ");
 
                 if (count.ContainsKey(key)) //also nur wenn schon ein gleicher Key vorkam, wird diese Bedingung erfüllt. WICHTIGSTER PUNKT
                 {
                     goodPairs += count[pairs[i] - i];
-                    count[pairs[i] - i] += 1;          //hier wird die Value des KeyValue Paares erhöht in dem dict.
+                    count[pairs[i] - i] += 1;          //hier wird die Value des KeyValue Paares erhöht in dem dict
+                    Console.Write($"Anzahl guter Paare: {goodPairs}");
                 }
                 else
                 {
                     count[key] = 1; //setzt key auf 1 falls leer
                 }
+                Console.WriteLine("");
             }
-
-
-
+            Console.WriteLine($"Gesamtanzahl Paare: {totalPairs}");
             return totalPairs-goodPairs;
         }
 

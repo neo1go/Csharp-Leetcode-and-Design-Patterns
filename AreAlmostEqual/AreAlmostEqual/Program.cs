@@ -30,7 +30,7 @@ namespace AreAlmostEqual
                 if (diffCount == 1) return false;
 
                 // Überprüfen, ob die 2 Zeichen an den unterschiedlichen Index-Positionen getauscht werden können.
-                // 0 und 1 sind die beiden Einträge des Index-Arrays. Es werden also insgesamt 4 Positionen verglichen.
+                // 0 und 1 sind die beiden Einträge des Länge[2]Index-Arrays. Es werden also insgesamt 2x2 Positionen verglichen.
                 return s1[diffIndices[0]] == s2[diffIndices[1]] && s1[diffIndices[1]] == s2[diffIndices[0]];
             }
 

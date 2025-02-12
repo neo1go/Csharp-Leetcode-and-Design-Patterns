@@ -35,7 +35,10 @@ namespace BinaryTreeIterators
         //Diese Suche geht zuerst bis zum tiefsten linken Knoten oder Blatt
         private static void DFSRecursive(TreeNode<T>? node)
         {
-            if (node == null) return;
+            if (node == null) 
+            {
+                return;
+            }
             Console.WriteLine(node.Value); //Pre-Order Traversal
             DFSRecursive(node.Left);//Die Reihenfolge bewirkt, das solange links weiteriteriert wird, solange ein Wert vorhanden ist.
             DFSRecursive(node.Right);//Erst wenn links "null" ist, wird zurückgesprungen und der node.Right ausgeführt.
@@ -70,7 +73,9 @@ namespace BinaryTreeIterators
                 {
                     queue.Enqueue(current.Right);
                 }
+                
             }
+            
         }
     }
 

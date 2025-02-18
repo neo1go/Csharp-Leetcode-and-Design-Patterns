@@ -11,17 +11,18 @@ namespace StrategyPatternII
 
     public abstract class Animal
     {
-        public IFLy? FlyingType { get; set; }
+        public IFLy? FlyingType { get; set; } //Instanz-Eigenschaft   
        
 
         public Animal(IFLy flyingType)  //dient hier nur dem Interface
         {
-            FlyingType = flyingType;
+            FlyingType = flyingType; //Das Objekt FlyingType ist eine Schnittstelle (Interface-Referenz)
         }
 
-        public string TryToFly()
+        public string TryToFly() //Dies ist ein einheitlicher ,polymorpher Zugriffspunkt auf die Fähigkeit zu fliegen.
+                                 //Somit wird die Fluglogik CanFly,CantFly von der Tierlogik Animal getrennt
         {
-            return FlyingType!.Fly();    //Hier wird die Interfacemethode an das Objekt gekoppelt
+            return FlyingType!.Fly();    //Hier wird die Interfacemethode an das Objekt gekoppelt              (NonNullable -> !)
         }
 
         public void SetFlyingAbility(IFLy newFlyType) //Setter, der die Methode bei new-Operator neu setzt.

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35731.43 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FascadePattern", "FascadePattern\FascadePattern.csproj", "{0C2F1866-2A1A-4F5A-855D-7735B64E9112}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C2F1866-2A1A-4F5A-855D-7735B64E9112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C2F1866-2A1A-4F5A-855D-7735B64E9112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C2F1866-2A1A-4F5A-855D-7735B64E9112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C2F1866-2A1A-4F5A-855D-7735B64E9112}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68B7BF09-6CF7-444A-AC01-9D36CDA33142}
+	EndGlobalSection
+EndGlobal

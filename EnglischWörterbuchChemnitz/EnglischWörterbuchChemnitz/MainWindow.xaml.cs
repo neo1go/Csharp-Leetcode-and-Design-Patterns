@@ -213,7 +213,7 @@ namespace EnglischWörterbuchChemnitz
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex)  
             {
                 MessageBox.Show("Fehler beim Lesen der Datei: " + ex.Message);
             }

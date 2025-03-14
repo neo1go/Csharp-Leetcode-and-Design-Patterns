@@ -34,7 +34,7 @@
 
         <!-- Rechte Seite: Sucheingabe -->
         <StackPanel Grid.Column="1" Margin="10">
-            <TextBox x:Name="SearchTextBox" Width="230" Height="30" HorizontalAlignment="Right"/>
+            <TextBox x:Name="SearchTextBox" KeyDown="SearchTextBox_KeyDown" Width="230" Height="30" HorizontalAlignment="Right"/>
             
             <Button x:Name="SearchButton" Content="Suchen" Width="230" Height="30" Margin="0,5,0,0" 
                     HorizontalAlignment="Right" Click="SearchButton_Click"/>

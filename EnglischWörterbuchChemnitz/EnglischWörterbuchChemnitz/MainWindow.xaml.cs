@@ -138,7 +138,7 @@ namespace EnglischWörterbuchChemnitz
 
 
 
-        //Bei dieser Varianter wird immer auf die Festplatte zugegriffen bei jeder Abfrage und nur zeilenweise eingelesen.
+        //Bei dieser Variante wird immer auf die Festplatte zugegriffen bei jeder Abfrage und nur zeilenweise eingelesen.
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             string suchbegriff = SearchTextBox.Text.Trim(); //Dies ist die eingegebene Variable
@@ -150,7 +150,7 @@ namespace EnglischWörterbuchChemnitz
                 return;
             }
 
-            string filePath = @"C:\ÜbersetzungGH\textdaten\de-en.txt"; 
+            string filePath = @"C:\ÜbersetzungGHBeolingus\textdaten\de-en.txt"; 
             if (!File.Exists(filePath))
             {
                 MessageBox.Show("Datei nicht gefunden: " + filePath);
@@ -278,6 +278,16 @@ namespace EnglischWörterbuchChemnitz
             {
                 WindowState = WindowState.Normal;
                 WindowStyle = WindowStyle.SingleBorderWindow;
+            }
+        }
+
+        //Passender Eventhandler zur Textbox
+        private void SearchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                SearchButton_Click(sender, e); //führt bei Returntastennutzung in SearchBox_KeyDown
+                                               //einfach die schon bekannte Methode aus.
             }
         }
     }

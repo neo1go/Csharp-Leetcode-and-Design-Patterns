@@ -1,12 +1,13 @@
 ﻿
 using System;
+using System.Runtime.ConstrainedExecution;
 // Das Template Pattern hilft bei Klassen, die gemeinsame Methoden nutzen,
 // den Code zu vereinfachen und Redundanzen zu vermeiden.
 //
 // Ein Algorithmus wird in einer Basisklasse definiert und variierende Teile werden in Subklassen
 // ausgelagert. Die Reihenfolge der Schritte wird in der Basisklasse festgelegt.
 // Subklassen können einzelne Schritte anpassen, aber nicht den Gesamtstruktur des Ablaufs ändern.
-// Bestimmte Schritte können in Subklassen überschrieben werden , um spezifisches Verhalten einzubinden, ohne den
+// Bestimmte Schritte können in Subklassen überschrieben werden, um spezifisches Verhalten einzubinden, ohne den
 // Gesamtalgorithmus zu stören. Dies fördrt das Open/Closed Prinzip.(Erweiterbarkeit ohne Modifikation des bestehenden Codes).
 // 
 //
@@ -18,7 +19,7 @@ using System;
 //
 //
 // Das Template-Pattern macht am meisten Sinn, wenn mehrere Kind-Klassen sich viele oder einige der Funktionalitäten bzw das Grundgerüst
-// teilen oder Methoden in ähnlicher Form nutzen wobei sich individuelle Schritte unterscheiden können.
+// teilen oder Methoden in ähnlicher Form nutzen, wobei sich individuelle Schritte unterscheiden können.
 //
 //
 // Die Reihenfolge der Schritte sollte dabei gleich sein. Wenn Unterklassen keine erkennbare gemeinsame Prozessstruktur besitzen oder
@@ -26,11 +27,11 @@ using System;
 
 
 
-// Abstrakte Basisklasse definiert die Template-Methode
+// Diese abstrakte Basisklasse definiert die Template-Methoden
 abstract class DataProcessor
 {
-    // Template-Methode (final, darf nicht überschrieben werden)
-    public  void ProcessData()
+    // Template-Methode (sollte so bleiben und nicht überschrieben werden. In Java z.B. wird dies 'final' gesetzt)
+    public void ProcessData()
     {
         LoadData();
         TransformData();
@@ -46,13 +47,13 @@ abstract class DataProcessor
     protected abstract void TransformData();
     protected abstract void SaveData();
 
-    // Hook-Methode - kann von Subklassen überschrieben werden
+    // Hook-Methode - diese konkretisierte Methode kann von Subklassen überschrieben werden, muß aber nicht zwangsläufig vererbt werden.
     protected virtual bool ShouldLog() 
     {
         return false;
     }
 
-    // Optionale Methode, die von Subklassen bei Bedarf überschrieben werden kann
+    // Optionale Methode, die von Subklassen bei Bedarf überschrieben werden kann. Durch 'virtual' gekennzeichnete Methoden dürfen überschrieben werden.
     protected virtual void Log()
     {
         Console.WriteLine("Standard-Logging: Verarbeitung abgeschlossen.");

@@ -1,7 +1,6 @@
 ﻿using IteratorPancakeDiner;
-using System;
 using System.Collections;
-
+using System;
 
 
 namespace IteratorPancakeDiner
@@ -12,7 +11,8 @@ namespace IteratorPancakeDiner
         bool hasNext();
         MenuItem next();
     }
- //------------------------------------------------------
+    //------------------------------------------------------
+    //Die grundlegende Struktur der Einträge als Objekt
     public class MenuItem
     {
         public string name;
@@ -28,15 +28,16 @@ namespace IteratorPancakeDiner
             this.price = price;
         }
     }
-//--------------------------------------------------------
-   
-    //Klasse für die Diner Menüliste, also die konkrete Collection, die iteriert werden soll
+    //--------------------------------------------------------
+
+    //Klasse für eine konkrete Collection, die iteriert werden soll.
     public class DinerMenu
     {
         const int MAX_ITEMS = 6;
         int numberOfItems = 0;
         MenuItem[] menuItems;
 
+        //Default Konstruktor
         public DinerMenu()
         {
             menuItems = new MenuItem[MAX_ITEMS];
@@ -62,10 +63,12 @@ namespace IteratorPancakeDiner
 
         public Iterator CreateIterator()
         {
-            return new DinerMenuIterator(menuItems);
+            return new DinerMenuIterator(menuItems); //Custom Iterator extra für die passende Collection
         }
     }
-    //Klasse für das Pfannkuchenhaus Menü ,also die konkreten Collections die iteriert werden sollen
+
+
+    //Klasse für das Pfannkuchenhaus Menü ,also eine weitere konkrete Collection, die iteriert werden soll. Diesmal eine ArrayList.
     public class PancakeHouseMenu
     {
         ArrayList menuItems = new ArrayList();
@@ -87,6 +90,36 @@ namespace IteratorPancakeDiner
             return new PancakeHouseIterator(menuItems);
         }
     }
+
+    //Weitere Collection zum Iterieren, diesmal ein dict.
+    public class CafeMenu
+    {
+        Dictionary<string, MenuItem> menuItems = new Dictionary<string, MenuItem>();
+
+        public CafeMenu()
+        {
+            AddItem("Veggie Burger und Fritten", "Veggieburger auf einem ganzen Weizenbrötchen, Salat Tomaten und Pommes Frites", true, 3.99);
+            AddItem("Tagessuppe", "Ein Teller Suppe des Tages mit Beilagensalat", false, 3.69);
+            AddItem("Burrito", "Ein grßer Burrito mit ganzen Pintobohnen, Salsa und Guacamole", true, 4.29);
+        }
+
+        public void AddItem(string name, string description, bool vegetarian, double price)
+        {
+            MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
+            menuItems.Add(name, menuItem); //Achtung, hier wird vom MenuItem Datentyp ins dictionary übertragen.
+        }
+
+        public Dictionary<string, MenuItem> GetMenuItems()
+        {
+            return menuItems;
+        }
+
+        public Iterator CreateIterator()
+        {
+            return new CafeMenuIterator(menuItems);
+        }
+    }
+
 
     //----------------------------------------------------------------------
 
@@ -113,6 +146,7 @@ namespace IteratorPancakeDiner
             return menuItem;
         }
     }
+
     //PancakeHouse Iterator, speziell für  ArrayList Collections
     public class PancakeHouseIterator : Iterator
     {
@@ -137,16 +171,43 @@ namespace IteratorPancakeDiner
         }
     }
 
-    //Hier werden eigentlich beide Collections instanziiert und man erhält dann mittels waitress Objekt Zugriff darauf.
+    public class CafeMenuIterator : Iterator
+    {
+        List<MenuItem> items;
+        int position = 0;
+
+        public CafeMenuIterator(Dictionary<string, MenuItem> items)
+        {
+            this.items = new List<MenuItem>(items.Values);
+        }
+        public bool hasNext()
+        {
+            return position < items.Count;
+        }
+
+        public MenuItem next()
+        {
+            if (!hasNext())
+            {
+                throw new InvalidOperationException("Kein weiteres Element vorhanden.");
+            }
+            return (MenuItem)items[position++];
+        }
+    }
+
+    //---------------------------------------------------------------------------------------------------
+
+    //Hier werden eigentlich beide Collections instanziiert und man erhält dann mittels waitress-Objekt und PrintMenu() den Zugriff darauf.
     public class Waitress
     {
         PancakeHouseMenu pancakeHouseMenu;
         DinerMenu dinerMenu;
-
-        public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu)
+        CafeMenu cafeMenu;
+        public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu, CafeMenu cafeMenu)
         {
             this.pancakeHouseMenu = pancakeHouseMenu;
             this.dinerMenu = dinerMenu;
+            this.cafeMenu = cafeMenu;
         }
 
         public void PrintMenu()
@@ -155,16 +216,18 @@ namespace IteratorPancakeDiner
             PrintMenuInternal(pancakeHouseMenu.CreateIterator());
             Console.WriteLine("\nMITTAGESSEN");
             PrintMenuInternal(dinerMenu.CreateIterator());
+            Console.WriteLine("\nCafe");
+            PrintMenuInternal(cafeMenu.CreateIterator());
         }
 
         public void PrintMenuInternal(Iterator iterator)
         {
-         while (iterator.hasNext())
+            while (iterator.hasNext())
             {
                 MenuItem item = iterator.next();
-                Console.WriteLine($"{ item.name}, {item.price:0.00} €");
+                Console.WriteLine($"{item.name}, {item.price:0.00} €");
                 Console.WriteLine($"  ({item.description})");
-                Console.WriteLine($"  {(item.vegetarian ? "[Vegetarisch]" : "")}");
+                Console.WriteLine($"  {(item.vegetarian ? "[Vegetarisch]" : "[nicht vegan]")}");
             }
         }
     }
@@ -173,11 +236,18 @@ namespace IteratorPancakeDiner
 
 public class MenuTestDrive
 {
-    public static void Main(string[] args )
+    public static void Main(string[] args)
     {
+        //dies dient nur der korrekten Darstellung der Geldwerte in der Konsole.
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+        //---------------------------------------------------------------------
+
+
         PancakeHouseMenu pan = new PancakeHouseMenu();
         DinerMenu men = new DinerMenu();
-        Waitress waitress = new Waitress(pan, men);
+        CafeMenu caf = new CafeMenu();
+        Waitress waitress = new Waitress(pan, men,caf);  
 
         waitress.PrintMenu();
     }

@@ -43,7 +43,8 @@ public class Program
                     subLength = subLength * 10 + (abbr[abbrIndex] - '0');//Dadurch wird ein char in int umgewandelt.
                     abbrIndex++;
                 }
-                wordIndex += subLength;//hier wird die Nummer zu dem anderen Pointer hinzuaddiert. 
+                wordIndex += subLength;//hier wird die Nummer zu dem anderen Pointer hinzuaddiert,also die Zahl aus der abbr wird addiert,damit
+                                       //richtig in word weiteriteriert wird mit dem Pointer.WICHTIG. 
             }
             else
             {

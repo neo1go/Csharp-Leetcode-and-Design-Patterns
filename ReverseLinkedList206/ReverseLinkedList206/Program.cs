@@ -1,6 +1,5 @@
 ﻿//Leetcode 206
 
-
 public class ListNode
 {
     public int value;
@@ -18,33 +17,31 @@ public class ListNode
 // Gewünscht ist am Ende:     null<- A <- B <- C <- head
 //
 
-
-
 public class Program
 {
     public static ListNode ReverseList(ListNode head)
     {
         ListNode current = head;
-        ListNode previous = null;
+        ListNode previous = null; //nur beim ersten Mal. Wird dann neu belegt.
 
         while (current != null) //bei jedem Durchlauf wird jeweils nur einmal ein Wert neu referenziert.
         {
-            ListNode? nextNode = current.next;// wird hier erzeugt, da die Prüfung für current damit
+            ListNode? nextNode = current.next;// wird hier jedesmal neu gesetzt, da die Prüfung für current damit
                                              // sozusagen schon abgedeckt wird durch die while-Bedingung.
 
-            current.next = previous; // Zeiger wird rumgedreht. A zeigt beim ersten Durchlauf somit auf Null
+            current.next = previous; // Zeigerdrehung. A zeigt beim ersten Durchlauf somit auf Null.Danach wird ja prev neu gesetzt, also um eins verschoben.
             previous = current;    // die Null wird beim ersten Durchlauf mit dem aktuellen Wert überschrieben
             current = nextNode;          // dies ist die Iteration nach vorne zum nächsten Knoten
         }
-        head = previous;  //man könnte auch previous zurückgeben, aber so ist es verständlicher.
-
+        head = previous;  //man könnte auch previous zurückgeben, aber so ist es verständlicher. previous steht am Ende der Iteration ganz rechts.
+                          //Währendessen sind current und current.next schon gleich Null.
         return head;
     }
 
     public static void PrintList(ListNode head)
     {
         ListNode? current = head;
-
+        Console.Write("Head ");
         while (current != null)
         {
             Console.Write(current.value + " -> ");
@@ -53,12 +50,11 @@ public class Program
         Console.WriteLine("null");
     }
 
-
     public static void Main(string[] args)
     {
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        ListNode newH = ReverseList(head);
-        PrintList(newH);
+        ListNode newHead = ReverseList(head);
+        PrintList(newHead);
     }
 }
 

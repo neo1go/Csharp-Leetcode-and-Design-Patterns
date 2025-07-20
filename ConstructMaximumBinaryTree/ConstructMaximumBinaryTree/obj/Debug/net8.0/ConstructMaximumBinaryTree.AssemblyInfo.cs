@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConstructMaximumBinaryTree")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f40f2129926f1e9fca37b6aaaf28b6c1e4ac046")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c6487f5c5f5304b4f96f7a0c8d1a60c6eb309a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConstructMaximumBinaryTree")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConstructMaximumBinaryTree")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

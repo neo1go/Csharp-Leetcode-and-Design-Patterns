@@ -1,32 +1,50 @@
 ﻿namespace constructMaxBinaryTree
 {
+    //Für die Erstellung der Knotenpunkte
+    public class TreeNode
+    {
+        //Felder
+        public int val;
+        public TreeNode? left;
+        public TreeNode? right;
+
+
+        //Konstruktor
+        public TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+    //-----------------------------------------------------------------------------------
     public class MaxBinaryTree
     {
 
         //Hier wird der fertige Tree returned falls er nicht leer ist
         public TreeNode? ConstructMaximumBinaryTree(int[] nums)
         {
-            //wenn nums leer ist , null returnen
+            //basecase bei leerem Array
             if (nums == null || nums.Length == 0)
             {
                 return null;
 
             }
 
-            return build(nums, 0, nums.Length - 1); //Erstellt den gesamten Baum, wobei die build-Methode rekursiv alles erzeugt 
+            return Build(nums, 0, nums.Length - 1); //Erstellt den gesamten Baum, wobei die build-Methode rekursiv alles erzeugt. 
 
         }
 
         //Hier wird der Tree erstellt
-        private TreeNode? build(int[] nums, int start, int end)
+        private TreeNode? Build(int[] nums, int start, int end)
         {
-            if (start > end) //um die Methode zu beenden, also ein Ausstieg
+            if (start > end) 
             {
                 return null;
             }
 
             //den Maxwert und somit den Wurzelknotenpunkt ermitteln WICHTIG!!!
-            int indexMax = start; //Intialisieren des Maxwerts. Dieser Wert enthält die Pivot-Position des Maxwertes als Indexwert
+            int indexMax = start; //Intialisieren des Maxwerts. Dieser Wert enthält die Pivot-Position des Maxwertes als Indexwert.
 
             for (int i = start; i <= end; i++)
             {
@@ -40,8 +58,8 @@
             //Erzeugen des Rootknotenpunktes mit dem Maxwert
             TreeNode? root = new TreeNode(nums[indexMax]);
 
-            root.left = build(nums, start, indexMax - 1);  //rekursiv, um die linke Seite jedesmal beim Aufruf mit dem Maxwert zu populieren
-            root.right = build(nums, indexMax + 1, end); //rekursiv, um die rechte Seite jedesmal beim Aufruf mit dem Maxwert zu populieren
+            root.left = Build(nums, start, indexMax - 1);  //rekursiv, um die linke Seite jedesmal beim Aufruf mit dem Maxwert zu populieren
+            root.right = Build(nums, indexMax + 1, end); //rekursiv, um die rechte Seite jedesmal beim Aufruf mit dem Maxwert zu populieren
 
 
 
@@ -103,9 +121,6 @@
         }
     }
 
-
-
-
     public class Program
     {
         public static void Main(string[] args)
@@ -119,26 +134,4 @@
             maxBinaryTree.PrintTreeAsArray(root); //Hier werden alle Werte als lesbares Array in der Konsole ausgegeben.
         }
     }
-
-
-
-
-    //Für die Erstellung der Knotenpunkte
-    public class TreeNode
-    {
-        //Felder
-        public int val;
-        public TreeNode? left;
-        public TreeNode? right;
-
-
-        //Konstruktor
-        public TreeNode(int val = 0, TreeNode? left = null, TreeNode? right = null)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
 }

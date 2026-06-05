@@ -12,7 +12,7 @@ class Program
         int n = 20;
         while (n > 0)
         {
-            Console.WriteLine($"\nDeine {n}te Frage:");
+            Console.WriteLine(n>1 ? $"\nDeine {n}te Frage:":"\nDeine letzte Frage");
             string? question = Console.ReadLine();
             if (string.IsNullOrEmpty(question)) break;
 

@@ -20,7 +20,7 @@ class Program
 
             var lower = question.ToLower();
 
-            if (lower.Contains(animal.ToLower()) {
+            if (lower.Contains(animal.ToLower())) {
                 Console.WriteLine("Das ist das richtige Tier.");
                 break;
             }

@@ -59,8 +59,8 @@
                 if (i % 5 == 0) result += "Buzz";
 
                 Console.WriteLine(string.IsNullOrEmpty(result) ? i.ToString() : result);
-         // immer wieder verwirrend. Wenn Wert von result leer oder null ist, wird i eingesetzt, ansonsten der result-Wert,
-         // der auch konkateniert sein kann.
+         // Wenn Wert von result leer oder null ist (isNullOrEmpty), dann  wird i.ToString() eingesetzt, ansonsten der result-Wert,
+         // der dann  u.U. auch konkateniert werden kann.
             }
         }
 

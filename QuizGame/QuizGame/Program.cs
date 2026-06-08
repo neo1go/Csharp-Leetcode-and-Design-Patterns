@@ -43,10 +43,10 @@ class Program
         new
         {
             role = "user",
-            content = "Nenne ein zufälliges Tier allen Tierarten weltweit auf deutsch. Kein Haustierfokus. Kein Nachdenken. Keine Erklärung. Nur das Wort."
+            content = "Wähle ein Tier, das nicht zu den 1000 bekanntesten Tierarten gehört. Keine Erklärung. Nur das Wort auf deutsch."
         }
     },
-            temperature = 1.0,
+            temperature = 1.0, // tiefe Zahl = sehr spezifisch, höhere Zahl = breitere Auswahl
             max_tokens = 500
         };
         var jsonBody = JsonSerializer.Serialize(request);
